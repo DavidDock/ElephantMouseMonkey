@@ -25,7 +25,7 @@
 ### Colour Scheme
 
 
-Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme, picking the brightest colors to keep the children entertained. The research I did and advice I took was from [Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
+Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme.Some of the research I did about UX for children was on the website[Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
 
 To meet WCAG 2.0 criteria, the color scheme was then passed to [eightshapes.com](https://contrast-grid.eightshapes.com/) to generate an accessibility table, I then only used accessible text colors to ensure easy reading.
 
