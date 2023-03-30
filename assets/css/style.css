@@ -159,39 +159,32 @@ button {
  
 /*game area*/
 /*animal choice area*/
-#choice-container {
-    width: fit-content;
+#image-choices {
+    width: 80%;
     background-color: rgba(255,165,0, 0.8);
     margin: 0 auto;
     border-radius: 25px;
     display: flex;
-    flex-direction: column;
-}
-
-#pick-heading {
-    color: black;
-    font-family: Indie Flower;
-    margin: 0 auto;
-    padding-top: 1rem;
-}
-
-#image-choices {
-    display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.animal-image {
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
 }
 
 .animals {
-    width: 4.5rem;
-    padding: 0.25rem;
-    border: solid white 0.15rem;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.6);
+    width: 20%;
+    height: auto;
+    margin: 0.5rem 0 0.5rem 0;
 }
 
 .animals:hover {
     cursor: pointer;
     border: solid black 0.15rem;
+    border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.6);
 }
