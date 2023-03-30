@@ -54,7 +54,7 @@ button {
   /*header with logo and title*/
 header {
     background-color: rgba(0, 70, 140, 0.8);
-    max-width: 80%;
+    max-width: 85%;
     margin: 10% auto;
     display: flex;
     flex-direction: column;
@@ -163,11 +163,23 @@ header {
  
 /*game area*/
 /*animal choice area*/
-#image-choices {
+#choice-container {
     width: 80%;
-    background-color: rgba(255,165,0, 0.8);
+    background-color: rgba(102,255,0, 0.8);
     margin: 0 auto;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#make-choice {
+    padding: 2%;
+    color:rgba(0, 70, 140, 1);
+    font-family: Indie Flower;
+}
+
+#image-choices {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -175,9 +187,7 @@ header {
 }
 
 .animals {
-    width: 20%;
-    height: auto;
-    margin: 0.5rem 0 0.5rem 0;
+    width: 30%;
 }
 
 .animals:hover {
@@ -185,4 +195,45 @@ header {
     border: solid black 0.15rem;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+/*score area*/
+#scores-container {
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#your-score-container {
+    background-color: rgba(255,165,0,0.6);
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#computer-score-container {
+    background-color: rgba(255,165,0,0.6);
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#score-p {
+    color:#00468c;
+    margin: 0.5rem;
+    font-size: 0.75rem;
+}
+
+#your-score, #computer-score {
+    font-size: 1.5rem;
+    color: black;
 }
