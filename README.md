@@ -1,10 +1,13 @@
 # Elephant Mouse Monkey
 
-This is a variation of the game of chance 'Rock' 'Paper' 'Scissor' but with additional features designed to keep children entertained.
+This is a variation of 'Rock' 'Paper' 'Scissor' but with additional features designed to keep children entertained.
 
-You can choose your own 'destination' of either the Forest, Savannah or Meadow to play, you then pick 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.
+You choose your game 'destination' of either the Forest, Savannah or Meadow to play. You then pick 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.
 
-Everyone knows that 'Mice scare Elephants' 'Monkeys catch Mice' and 'Elephants squash Monkeys!!'
+Everyone knows that:
+'Mice scare Elephants'
+'Monkeys catch Mice' and
+'Elephants squash Monkeys!!'
 
 
 
@@ -29,8 +32,8 @@ Everyone knows that 'Mice scare Elephants' 'Monkeys catch Mice' and 'Elephants s
 
 
 The game is for all ages but primarily designed for children.
-This meant the game had to entertain and be eye catching to grab the users attention.
-Because the game is to be used by children it was important to make the users journey clear and easy to follow.  
+This means that the game has to entertain and be eye catching to grab the users attention.
+Because the game is to be used by children it is important to ensure the users journey is clear and simple to follow.  
 
 ### User Stories  
 

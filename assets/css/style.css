@@ -17,30 +17,6 @@ body {
     background-repeat: no-repeat;
   }
 
-/*header with logo and title*/
-header {
-    background-color: rgba(0, 70, 140, 0.8);
-    max-width: 80%;
-    margin: 10% auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    border-radius: 25px;    
-  }
-
- #logo {
-    width: 50%;
-    padding-top: 1rem;
-  }
-
-#title {
-    padding: 0.5rem 1.5rem 1rem;
-    color: #66ff00;
-    font-size: 1.1rem;
-    font-family: kranky;
-  }
-
  /*headings and paragraph style defaults*/
 h2, h3 {
     font-family: kranky;
@@ -74,10 +50,32 @@ button {
     height: auto;
     padding: 0.5rem;
 }
-  
+
+  /*header with logo and title*/
+header {
+    background-color: rgba(0, 70, 140, 0.8);
+    max-width: 80%;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    border-radius: 25px;    
+}
+
+#logo {
+    width: 50%;
+    padding-top: 1rem;
+}
+
+#title {
+    padding: 0.5rem 1.5rem 1rem;
+    color: #66ff00;
+    font-size: 1.1rem;
+    font-family: kranky;
+}
 
 /*question section*/
-
 #question-section {
     background-color: rgba(8, 232, 222, 0.9);
     margin: 20% auto;
