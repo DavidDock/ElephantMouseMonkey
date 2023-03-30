@@ -80,7 +80,7 @@ header {
     margin: 20% auto;
     width: fit-content;
     max-width: 75%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -279,7 +279,7 @@ header {
     margin: 20% auto;
     width: fit-content;
     max-width: 75%;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
