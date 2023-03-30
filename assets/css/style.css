@@ -1,0 +1,45 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kranky&display=swap');
+
+/*all elements*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*body*/
+body {
+    min-height: 100vh;
+    background-image: url('../images/jungle.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*header*/
+  header {
+    background-color: rgba(0, 70, 140, 0.8);
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    border-radius: 25px;
+    
+  }
+
+  /*logo*/
+  #logo {
+    width: 14rem;
+    background-color: none;
+    padding-top: 1rem;
+  }
+
+  /*title*/
+  #title {
+    padding: 0.5rem 1.5rem 1rem;
+    color: #66ff00;
+    font-size: 1.1rem;
+    font-family: kranky;
+  }

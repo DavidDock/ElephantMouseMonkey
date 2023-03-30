@@ -20,6 +20,8 @@ Everyone knows that 'Mice scare Elephants' 'Monkeys catch Mice' and 'Elephants s
   * [Images](#images)
   * [Wireframes](#wireframes)
 
+* [Features](#features)
+
 
 ## User Experience
 
@@ -115,3 +117,5 @@ The site is responsive and does ajust image and font size depending on device si
 
 
 ![Results section](assets/media/wireframes/results.png)
+
+## Features
