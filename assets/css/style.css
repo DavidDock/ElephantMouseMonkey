@@ -39,8 +39,7 @@ button {
     color: #803790;
     font-family: Indie Flower;
     font-weight: 800;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding: 0.25rem 0.75rem;
     font-size: 1.5rem;
     margin: 0.5rem;
   }
@@ -69,7 +68,7 @@ header {
 }
 
 #title {
-    padding: 0.5rem 1.5rem 1rem;
+    padding: 0.5rem 1rem 1rem;
     color: #66ff00;
     font-size: 1.1rem;
     font-family: kranky;
@@ -163,6 +162,10 @@ header {
  
 /*game area*/
 /*animal choice area*/
+#game-container{
+    display: none;
+}
+
 #choice-container {
     width: 80%;
     background-color: rgba(102,255,0, 0.8);
@@ -208,7 +211,7 @@ header {
 }
 
 #your-score-container {
-    background-color: rgba(255,165,0,0.6);
+    background-color: rgba(255,255,255,0.6);
     width: 40%;
     margin: 0 auto;
     border-radius: 25px;
@@ -218,7 +221,7 @@ header {
 }
 
 #computer-score-container {
-    background-color: rgba(255,165,0,0.6);
+    background-color: rgba(255,255,255, 0.6);
     width: 40%;
     margin: 0 auto;
     border-radius: 25px;
@@ -236,4 +239,71 @@ header {
 #your-score, #computer-score {
     font-size: 1.5rem;
     color: black;
+}
+
+/*Results area*/
+/*winner area*/
+#results-area-winner {
+    background-color: rgba(252,116,253, 0.9);
+    margin: 20% auto;
+    width: fit-content;
+    max-width: 75%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+#winner {
+    background-color: #803790;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+#results-area-winner p {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+#play-again-winner:hover {
+    cursor: pointer;
+    background-color: #803790;
+    color: #66ff00;
+}
+
+/*loser area*/
+#results-area-loser {
+    background-color: rgba(253,14,53, 0.8);
+    margin: 20% auto;
+    width: fit-content;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 25px;
+}
+#loser {
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+#results-area-loser p {
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+#play-again-loser{
+    background-color: #000000;
+    color: #66ff00;
+}
+
+#play-again-loser:hover {
+    cursor: pointer;
+    background-color: #66ff00;
+    color: #000000;
 }
