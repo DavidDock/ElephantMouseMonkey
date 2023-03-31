@@ -15,6 +15,7 @@ body {
     background-image: url('../images/jungle.webp');
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   /*classes for body background image change*/
