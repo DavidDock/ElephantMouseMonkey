@@ -17,6 +17,25 @@ body {
     background-repeat: no-repeat;
   }
 
+  /*classes for body background image change*/
+.savannah-add {
+    background-image: url('../images/savannah.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.forest-add {
+    background-image: url('../images/forest.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}  
+
+.meadow-add {
+    background-image: url('../images/meadow.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
  /*headings and paragraph style defaults*/
 h2, h3 {
     font-family: kranky;

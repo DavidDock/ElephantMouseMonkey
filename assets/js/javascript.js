@@ -25,18 +25,18 @@ no.addEventListener('click', incorrect);
 //event listeners for destination choice buttons
 //runs functions inside event listner to move to relevant game area
 savannah.addEventListener('click', function() {
-    body.style.backgroundImage= "url(assets/images/savannah.webp)";
+    body.classList.add("savannah-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
 
   });
 forest.addEventListener('click', function() {
-    body.style.backgroundImage= "url(assets/images/forest.webp)";
+    body.classList.add("forest-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
   meadow.addEventListener('click', function() {
-    body.style.backgroundImage= "url(assets/images/meadow.webp)";
+    body.classList.add("meadow-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
