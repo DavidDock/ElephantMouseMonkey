@@ -20,7 +20,7 @@ let userChoice
 //get each animal choice from array
 //add event listener for each animal
 //determine user choice from click
-//display choive in html
+//display choice as image in html
 for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");

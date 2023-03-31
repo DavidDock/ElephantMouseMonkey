@@ -261,6 +261,11 @@ header {
     color: black;
 }
 
+.choice-span {
+    width: 80%;
+}
+
+
 /*Results area*/
 /*winner area*/
 #results-area-winner {
