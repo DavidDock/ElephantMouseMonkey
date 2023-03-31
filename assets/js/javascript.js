@@ -6,6 +6,11 @@ const no = document.getElementById("no");
 const wrong = document.getElementById("wrong");
 const answer = document.getElementById("answer");
 const question = document.getElementById("question");
+const forest = document.getElementById("forest");
+const savannah = document.getElementById("savannah");
+const meadow = document.getElementById("meadow");
+const body = document.getElementsByTagName("body")[0]
+const gameContainer = document.getElementById("game-container");
 
 //event listeners for correct and incorrect answer to question
 //corect answer (yes button) takes user to rules area
@@ -16,6 +21,25 @@ yes.addEventListener('click', function() {
 });
 
 no.addEventListener('click', incorrect);
+
+//event listeners for destination choice buttons
+//runs functions inside event listner to move to relevant game area
+savannah.addEventListener('click', function() {
+    body.style.backgroundImage= "url(assets/images/savannah.webp)";
+    rules.style.display = "none";
+    gameContainer.style.display= "block";
+
+  });
+forest.addEventListener('click', function() {
+    body.style.backgroundImage= "url(assets/images/forest.webp)";
+    rules.style.display = "none";
+    gameContainer.style.display= "block";
+  });
+  meadow.addEventListener('click', function() {
+    body.style.backgroundImage= "url(assets/images/meadow.webp)";
+    rules.style.display = "none";
+    gameContainer.style.display= "block";
+  });
 
 //function inncorect to inform user answer is wrong
 function incorrect() {
