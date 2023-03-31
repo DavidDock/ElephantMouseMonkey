@@ -99,6 +99,7 @@ header {
 
 #wrong {
     display: none;
+    color: #000000;
 }
 
 #yes:hover {
