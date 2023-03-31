@@ -11,6 +11,22 @@ const savannah = document.getElementById("savannah");
 const meadow = document.getElementById("meadow");
 const body = document.getElementsByTagName("body")[0]
 const gameContainer = document.getElementById("game-container");
+const yourChoice = document.getElementById("your-image");
+const animals = document.getElementsByClassName("animals");
+
+//all let variables needed through game loops
+let userChoice
+
+//get each animal choice from array
+//add event listener for each animal
+//determine user choice from click
+//display choive in html
+for (let animal of animals) {
+  animal.addEventListener("click", function() {
+    userChoice = this.getAttribute("id");
+    alert(`You chose ${userChoice}`);
+  })
+}
 
 //event listeners for correct and incorrect answer to question
 //corect answer (yes button) takes user to rules area
