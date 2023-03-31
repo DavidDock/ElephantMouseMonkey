@@ -192,11 +192,11 @@ header {
 
 .animals {
     width: 30%;
+    margin: 0.25rem;
 }
 
 .animals:hover {
     cursor: pointer;
-    border: solid black 0.15rem;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.6);
 }
