@@ -11,7 +11,7 @@ const savannah = document.getElementById("savannah");
 const meadow = document.getElementById("meadow");
 const body = document.getElementsByTagName("body")[0]
 const gameContainer = document.getElementById("game-container");
-const yourChoice = document.getElementById("your-image");
+const yourImage = document.getElementById("your-image");
 const animals = document.getElementsByClassName("animals");
 
 //all let variables needed through game loops
@@ -24,7 +24,8 @@ let userChoice
 for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");
-    alert(`You chose ${userChoice}`);
+    yourImage.src = `assets/images/${userChoice}.png`;
+    yourImage.alt = `image of your animal choice, which was ${userChoice}`;
   })
 }
 
