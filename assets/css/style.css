@@ -74,7 +74,7 @@ button {
 header {
     background-color: rgba(0, 70, 140, 0.8);
     max-width: 85%;
-    margin: 10% auto;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,7 +189,7 @@ header {
 
 #choice-container {
     width: 80%;
-    background-color: rgba(102,255,0, 0.8);
+    background-color: rgba(102,255,0, 0.7);
     margin: 0 auto;
     border-radius: 25px;
     display: flex;
@@ -284,7 +284,7 @@ header {
 #results-area-winner {
     background-color: rgba(252,116,253, 0.9);
     background-image: url(../images/celebrate.gif);
-    margin: 20% auto;
+    margin: 10% auto;
     width: fit-content;
     max-width: 75%;
     display: none;
@@ -302,7 +302,6 @@ header {
 }
 
 #results-area-winner p {
-    font-size: 0.9rem;
     color: #000000;
 }
 
@@ -315,7 +314,7 @@ header {
 /*loser area*/
 #results-area-loser {
     background-color: rgba(253,14,53, 0.8);
-    margin: 20% auto;
+    margin: 10% auto;
     width: fit-content;
     max-width: 75%;
     display: none;
@@ -332,7 +331,6 @@ header {
 }
 
 #results-area-loser p {
-    font-size: 0.9rem;
     color: #000000;
 }
 
