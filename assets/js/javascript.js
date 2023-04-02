@@ -16,6 +16,8 @@ const computerImage = document.getElementById("computer-image")
 const animals = document.getElementsByClassName("animals");
 const yourScoreDisplay = document.getElementById("your-score");
 const computerScoreDisplay = document.getElementById("computer-score");
+const resultsAreaWinner = document.getElementById("results-area-winner");
+const resultsAreaLoser = document.getElementById("results-area-loser");
 
 //all let variables needed through game loops
 let userChoice
@@ -29,6 +31,7 @@ let computerScore = 0;
 //display choice as image in html
 //run functions getComputerChoice
 //run function for getResult
+//run function to check if game is over
 for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");
@@ -36,6 +39,7 @@ for (let animal of animals) {
     yourImage.alt = `image of your animal choice, which was ${userChoice}`;
     getComputerChoice();
     getResult();
+    gameOver();
   })
   }
 
@@ -154,4 +158,16 @@ function computerWins() {
   computerImage.classList.remove("lose");
   computerImage.classList.add("win");
   yourImage.classList.add("lose");
+}
+
+//function to check if game is over game send to relevant results area
+function gameOver() {
+  if (userScore === 5) {
+    gameContainer.style.display= "none";
+    resultsAreaWinner.style.display= "flex";
+  }
+  if (computerScore === 5) {
+    gameContainer.style.display= "none";
+    resultsAreaLoser.style.display= "flex";
+  }
 }
