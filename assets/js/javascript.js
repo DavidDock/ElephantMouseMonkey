@@ -18,6 +18,7 @@ const yourScoreDisplay = document.getElementById("your-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const resultsAreaWinner = document.getElementById("results-area-winner");
 const resultsAreaLoser = document.getElementById("results-area-loser");
+const resets = document.getElementsByClassName("resets");
 
 //all let variables needed through game loops
 let userChoice
@@ -171,3 +172,16 @@ function gameOver() {
     resultsAreaLoser.style.display= "flex";
   }
 }
+
+//getting each play again button
+//event listener for button click
+//takes player to pick destination area and resets scores
+for (let reset of resets) {
+  reset.addEventListener("click", function() {
+  resultsAreaWinner.style.display= "none";
+  resultsAreaLoser.style.display= "none";
+  rules.style.display = "flex";
+  userScore = 0;
+  computerScore = 0;
+  })
+}  
