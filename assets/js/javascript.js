@@ -68,17 +68,23 @@ function incorrect() {
 //runs functions inside event listner to move to relevant game area
 savannah.addEventListener('click', function() {
     body.classList.add("savannah-add");
+    body.classList.remove("meadow-add");
+    body.classList.remove("forest-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
 
   });
 forest.addEventListener('click', function() {
     body.classList.add("forest-add");
+    body.classList.remove("savannah-add");
+    body.classList.remove("meadow-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
   meadow.addEventListener('click', function() {
     body.classList.add("meadow-add");
+    body.classList.remove("savannah-add");
+    body.classList.remove("forest-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
@@ -183,5 +189,7 @@ for (let reset of resets) {
   rules.style.display = "flex";
   userScore = 0;
   computerScore = 0;
+  yourScoreDisplay.innerHTML = userScore;
+  computerScoreDisplay.innerHTML = computerScore;
   })
 }  
