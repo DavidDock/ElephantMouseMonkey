@@ -283,6 +283,7 @@ header {
 /*winner area*/
 #results-area-winner {
     background-color: rgba(252,116,253, 0.9);
+    background-image: url(../images/celebrate.gif);
     margin: 20% auto;
     width: fit-content;
     max-width: 75%;
