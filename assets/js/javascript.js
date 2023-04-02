@@ -14,10 +14,14 @@ const gameContainer = document.getElementById("game-container");
 const yourImage = document.getElementById("your-image");
 const computerImage = document.getElementById("computer-image")
 const animals = document.getElementsByClassName("animals");
+const yourScoreDisplay = document.getElementById("your-score");
+const computerScoreDisplay = document.getElementById("computer-score");
 
 //all let variables needed through game loops
 let userChoice
 let computerChoice
+let userScore = 0;
+let computerScore = 0;
 
 //get each animal choice from array
 //add event listener for each animal
@@ -130,15 +134,16 @@ function getResult() {
 
 //draw function
 function draw() {
-  alert("draw");
 }
 
 //function if user wins
 function youWin() {
-  alert("you win");
+  userScore++;
+  yourScoreDisplay.innerHTML = userScore;
 }
 
 //function if computer wins
 function computerWins() {
-  alert("computer wins");
+  computerScore++;
+  computerScoreDisplay.innerHTML = computerScore;
 }
