@@ -134,16 +134,24 @@ function getResult() {
 
 //draw function
 function draw() {
+  yourImage.classList.remove("win", "lose");
+  computerImage.classList.remove("win", "lose");
 }
 
 //function if user wins
 function youWin() {
   userScore++;
   yourScoreDisplay.innerHTML = userScore;
+  yourImage.classList.remove("lose");
+  yourImage.classList.add("win");
+  computerImage.classList.add("lose");
 }
 
 //function if computer wins
 function computerWins() {
   computerScore++;
   computerScoreDisplay.innerHTML = computerScore;
+  computerImage.classList.remove("lose");
+  computerImage.classList.add("win");
+  yourImage.classList.add("lose");
 }
