@@ -24,12 +24,14 @@ let computerChoice
 //determine user choice from click
 //display choice as image in html
 //run functions getComputerChoice
+//run function for getResult
 for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");
     yourImage.src = `assets/images/${userChoice}.png`;
     yourImage.alt = `image of your animal choice, which was ${userChoice}`;
     getComputerChoice();
+    getResult();
   })
   }
 
@@ -99,4 +101,29 @@ function getComputerChoice() {
   }
   computerImage.src = `assets/images/${computerChoice}.png`;
   computerImage.alt = `image of the animal the computer choice, which was ${computerChoice}`;
+}
+
+//function to get result and from each round and run relevant function
+function getResult() {
+  if (computerChoice === userChoice) {
+    draw();
+ }
+ if (computerChoice === 'elephant' && userChoice === 'mouse') {
+    youWin();
+ }
+ if (computerChoice === 'elephant' && userChoice === 'monkey') {
+    computerWins();
+ }
+ if (computerChoice === 'mouse' && userChoice === 'monkey') {
+    youWin();
+ }
+ if (computerChoice === 'mouse' && userChoice === 'elephant') {
+    computerWins();
+ }
+ if (computerChoice === 'monkey' && userChoice === 'elephant') {
+    youWin();
+ }
+ if (computerChoice === 'monkey' && userChoice === 'mouse') {
+    computerWins();
+ }
 }
