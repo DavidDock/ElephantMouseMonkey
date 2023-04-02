@@ -127,3 +127,18 @@ function getResult() {
     computerWins();
  }
 }
+
+//draw function
+function draw() {
+  alert("draw");
+}
+
+//function if user wins
+function youWin() {
+  alert("you win");
+}
+
+//function if computer wins
+function computerWins() {
+  alert("computer wins");
+}
