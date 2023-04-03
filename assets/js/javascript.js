@@ -207,5 +207,6 @@ for (let reset of resets) {
   computerImage.classList.remove("lose");
   yourImage.classList.remove("win");
   computerImage.classList.remove("win");
+  result.innerHTML= "Result =";
   })
 }  

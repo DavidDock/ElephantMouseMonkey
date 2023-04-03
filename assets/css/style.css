@@ -222,6 +222,7 @@ header {
     width: fit-content;
     margin: 5% auto;
     border-radius: 10px;
+    padding: 0.5rem;
 }
 
 #scores-container {
