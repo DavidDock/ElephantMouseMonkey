@@ -216,9 +216,17 @@ header {
 }
 
 /*score area*/
+#result {
+    background-color: rgba(128,55,144, 0.8);
+    color: #ffffff;
+    width: fit-content;
+    margin: 5% auto;
+    border-radius: 10px;
+}
+
 #scores-container {
     width: 80%;
-    margin: 10% auto 0;
+    margin: 0 auto;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -245,10 +253,9 @@ header {
     align-items: center;
 }
 
-#score-p {
+.score-p {
     color:#00468c;
     margin: 0.5rem;
-    font-size: 0.75rem;
 }
 
 #your-score, #computer-score {

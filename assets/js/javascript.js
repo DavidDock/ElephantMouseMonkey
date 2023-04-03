@@ -14,6 +14,7 @@ const gameContainer = document.getElementById("game-container");
 const yourImage = document.getElementById("your-image");
 const computerImage = document.getElementById("computer-image")
 const animals = document.getElementsByClassName("animals");
+const result = document.getElementById("result");
 const yourScoreDisplay = document.getElementById("your-score");
 const computerScoreDisplay = document.getElementById("computer-score");
 const resultsAreaWinner = document.getElementById("results-area-winner");
@@ -122,24 +123,31 @@ function getComputerChoice() {
 function getResult() {
   if (computerChoice === userChoice) {
     draw();
+    result.innerHTML= "Its a draw"
  }
  if (computerChoice === 'elephant' && userChoice === 'mouse') {
     youWin();
+    result.innerHTML= "Mouse scares off the Elephant" 
  }
  if (computerChoice === 'elephant' && userChoice === 'monkey') {
     computerWins();
+    result.innerHTML= "Elephant squashes the Monkey"
  }
  if (computerChoice === 'mouse' && userChoice === 'monkey') {
     youWin();
+    result.innerHTML= "Monkey catches the Mouse"
  }
  if (computerChoice === 'mouse' && userChoice === 'elephant') {
     computerWins();
+    result.innerHTML= "Mouse scares off the Elephant"
  }
  if (computerChoice === 'monkey' && userChoice === 'elephant') {
     youWin();
+    result.innerHTML= "Elephant squashes the Elephant"
  }
  if (computerChoice === 'monkey' && userChoice === 'mouse') {
     computerWins();
+    result.innerHTML= "Monkey catches the Mouse"
  }
 }
 
