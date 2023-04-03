@@ -191,5 +191,13 @@ for (let reset of resets) {
   computerScore = 0;
   yourScoreDisplay.innerHTML = userScore;
   computerScoreDisplay.innerHTML = computerScore;
+  yourImage.src = `assets/images/animals.png`;
+  yourImage.alt = `alt="Image of 3 possible animal choices: elephant, mouse and monkey"`;
+  computerImage.src = `assets/images/animals.png`;
+  computerImage.alt = `alt="Image of 3 possible animal choices: elephant, mouse and monkey"`;
+  yourImage.classList.remove("lose");
+  computerImage.classList.remove("lose");
+  yourImage.classList.remove("win");
+  computerImage.classList.remove("win");
   })
 }  
