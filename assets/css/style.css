@@ -133,7 +133,7 @@ header {
     background-color: rgba(128,55,144, 0.9);
     margin: 10% auto 0;
     width: fit-content;
-    max-width: 75%;
+    max-width: 80%;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +141,12 @@ header {
     padding: 1rem;
     border-radius: 25px;  
 }
+
+#destination-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
 
 #savannah {
     background-color: #ffa500;
@@ -222,7 +228,7 @@ header {
     width: fit-content;
     margin: 5% auto;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 #scores-container {
@@ -260,7 +266,7 @@ header {
 }
 
 #your-score, #computer-score {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: black;
 }
 
@@ -346,4 +352,39 @@ header {
     cursor: pointer;
     background-color: #66ff00;
     color: #000000;
+}
+
+/*media query min 600px*/
+@media (min-width: 600px) {
+    h2, h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    #title {
+        font-size: 1.75rem;
+    }
+    #question-section {
+        margin: 5% auto 0;
+    }
+    #rules {
+        margin: 5% auto 0; 
+    }
+    #destination-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+    #make-choice {
+        font-size: 1.5rem;
+    }
+    #result {
+        font-size: 1.5rem;
+    }
+    .score-p {
+       font-size: 1.75rem;
+    }    
+    #your-score, #computer-score {
+        font-size: 2.25rem;
+    }
 }
