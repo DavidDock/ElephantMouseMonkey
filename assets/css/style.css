@@ -365,12 +365,6 @@ header {
     #title {
         font-size: 1.75rem;
     }
-    #question-section {
-        margin: 5% auto 0;
-    }
-    #rules {
-        margin: 5% auto 0; 
-    }
     #destination-buttons {
         display: flex;
         flex-direction: row;
