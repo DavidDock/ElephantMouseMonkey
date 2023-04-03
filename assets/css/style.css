@@ -21,20 +21,14 @@ body {
   /*classes for body background image change*/
 .savannah-add {
     background-image: url('../images/savannah.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
   }
 
 .forest-add {
     background-image: url('../images/forest.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
 }  
 
 .meadow-add {
     background-image: url('../images/meadow.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
  /*headings and paragraph style defaults*/
@@ -97,7 +91,7 @@ header {
 /*question section*/
 #question-section {
     background-color: rgba(8, 232, 222, 0.9);
-    margin: 20% auto;
+    margin: 10% auto 0;
     width: fit-content;
     max-width: 75%;
     display: flex;
@@ -137,7 +131,7 @@ header {
 /*Rules section and destination selection buttons*/
 #rules {
     background-color: rgba(128,55,144, 0.9);
-    margin: 10% auto;
+    margin: 10% auto 0;
     width: fit-content;
     max-width: 75%;
     display: none;
@@ -224,7 +218,7 @@ header {
 /*score area*/
 #scores-container {
     width: 80%;
-    margin: 10% auto;
+    margin: 10% auto 0;
     border-radius: 25px;
     display: flex;
     justify-content: center;
@@ -284,7 +278,8 @@ header {
 #results-area-winner {
     background-color: rgba(252,116,253, 0.9);
     background-image: url(../images/celebrate.gif);
-    margin: 10% auto;
+    background-size: cover;
+    margin: 10% auto 0;
     width: fit-content;
     max-width: 75%;
     display: none;
@@ -314,7 +309,7 @@ header {
 /*loser area*/
 #results-area-loser {
     background-color: rgba(253,14,53, 0.8);
-    margin: 10% auto;
+    margin: 10% auto 0;
     width: fit-content;
     max-width: 75%;
     display: none;
