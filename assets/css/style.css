@@ -402,7 +402,7 @@ header {
         font-size: 2.5rem;
     }
     #rules {
-        margin: 5% auto 0;
+        margin: 2rem auto 0;
     }
     #make-choice {
         font-size: 2rem;
@@ -428,6 +428,9 @@ header {
     }
     #your-score, #computer-score {
         font-size: 2.5rem;
+    }
+    #result{
+        margin: 2rem auto;
     }
     #results-area-winner {
         margin: 5% auto 0;
