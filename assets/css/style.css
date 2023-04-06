@@ -314,7 +314,7 @@ header {
     background-color: rgba(252,116,253, 0.9);
     background-image: url(../images/celebrate.gif);
     background-size: cover;
-    margin: 10% auto 0;
+    margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
     display: none;
@@ -344,7 +344,7 @@ header {
 /*loser area*/
 #results-area-loser {
     background-color: rgba(253,14,53, 0.8);
-    margin: 10% auto 0;
+    margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
     display: none;
