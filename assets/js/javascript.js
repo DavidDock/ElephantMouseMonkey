@@ -123,31 +123,31 @@ function getComputerChoice() {
 function getResult() {
   if (computerChoice === userChoice) {
     draw();
-    result.innerHTML= "Its a draw"
+    result.innerHTML= "ITS A DRAW"
  }
  if (computerChoice === 'elephant' && userChoice === 'mouse') {
     youWin();
-    result.innerHTML= "Mouse scares off the Elephant" 
+    result.innerHTML= "YOU WIN <br> your Mouse scares off their Elephant" 
  }
  if (computerChoice === 'elephant' && userChoice === 'monkey') {
     computerWins();
-    result.innerHTML= "Elephant squashes the Monkey"
+    result.innerHTML= "YOU LOOSE <br> their Elephant squashes your Monkey"
  }
  if (computerChoice === 'mouse' && userChoice === 'monkey') {
     youWin();
-    result.innerHTML= "Monkey catches the Mouse"
+    result.innerHTML= "YOU WIN <br> your Monkey catches their Mouse"
  }
  if (computerChoice === 'mouse' && userChoice === 'elephant') {
     computerWins();
-    result.innerHTML= "Mouse scares off the Elephant"
+    result.innerHTML= "YOU LOOSE <br> their Mouse scares off your Elephant"
  }
  if (computerChoice === 'monkey' && userChoice === 'elephant') {
     youWin();
-    result.innerHTML= "Elephant squashes the Elephant"
+    result.innerHTML= "YOU WIN <br> your Elephant squashes their Monkey"
  }
  if (computerChoice === 'monkey' && userChoice === 'mouse') {
     computerWins();
-    result.innerHTML= "Monkey catches the Mouse"
+    result.innerHTML= "YOU LOOSE <br> their Monkey catches your Mouse"
  }
 }
 
@@ -155,6 +155,7 @@ function getResult() {
 function draw() {
   yourImage.classList.remove("win", "lose");
   computerImage.classList.remove("win", "lose");
+  result.style.opacity= "1";
 }
 
 //function if user wins
@@ -164,6 +165,7 @@ function youWin() {
   yourImage.classList.remove("lose");
   yourImage.classList.add("win");
   computerImage.classList.add("lose");
+  result.style.opacity= "1";
 }
 
 //function if computer wins
@@ -173,6 +175,7 @@ function computerWins() {
   computerImage.classList.remove("lose");
   computerImage.classList.add("win");
   yourImage.classList.add("lose");
+  result.style.opacity= "1";
 }
 
 //function to check if game is over game send to relevant results area
@@ -207,6 +210,6 @@ for (let reset of resets) {
   computerImage.classList.remove("lose");
   yourImage.classList.remove("win");
   computerImage.classList.remove("win");
-  result.innerHTML= "Result =";
+  result.style.opacity= "0";
   })
 }  

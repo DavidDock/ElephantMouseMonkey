@@ -275,6 +275,23 @@ header {
     margin: 5% auto 0;
     border-radius: 10px;
     padding: 0.75rem;
+    opacity: 0;
+    animation: glowing 1300ms infinite;
+}
+
+@keyframes glowing {
+    0%  {
+        background-color: #be03fd;
+        box-shadow: 0 0 20px #be03fd;
+;    } 
+    50%  {
+        background-color: rgba(128,55,144, 1);
+        box-shadow: 0 0 20px rgba(128,55,144, 1);
+    }  
+    100%  {
+        background-color: #be03fd;
+        box-shadow: 0 0 20px #be03fd;
+    }  
 }
 
 /*Winner and loser classes*/
