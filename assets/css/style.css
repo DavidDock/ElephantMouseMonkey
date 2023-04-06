@@ -1,5 +1,5 @@
 /*google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kranky&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kranky&display=block');
 
 /*all elements*/
 * {
@@ -33,12 +33,12 @@ body {
 
  /*headings and paragraph style defaults*/
 h2, h3 {
-    font-family: kranky;
+    font-family: kranky, Helvetica, arial, sans-serif;
     color: white;
   }
 
 p {
-    font-family: Indie Flower;
+    font-family: Indie Flower, arial, sans-serif, Helvetica;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
@@ -51,7 +51,7 @@ button {
     border: solid white;
     border-radius: 10px;
     color: #803790;
-    font-family: Indie Flower;
+    font-family: Indie Flower, arial, sans-serif, Helvetica;
     font-weight: 800;
     padding: 0.25rem 0.75rem;
     font-size: 1.5rem;
@@ -85,13 +85,13 @@ header {
     padding: 0.5rem 1rem 1rem;
     color: #66ff00;
     font-size: 1.1rem;
-    font-family: kranky;
+    font-family: kranky, Helvetica, arial, sans-serif;
 }
 
 /*question section*/
 #question-section {
     background-color: rgba(8, 232, 222, 0.9);
-    margin: 10% auto 0;
+    margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
     display: flex;
@@ -131,7 +131,7 @@ header {
 /*Rules section and destination selection buttons*/
 #rules {
     background-color: rgba(128,55,144, 0.9);
-    margin: 10% auto 0;
+    margin: 10% auto 2%;
     width: fit-content;
     max-width: 80%;
     display: none;
@@ -185,6 +185,7 @@ header {
 /*animal choice area*/
 #game-container{
     display: none;
+    margin-bottom: 2%;
 }
 
 #choice-container {
@@ -200,7 +201,7 @@ header {
 #make-choice {
     padding: 2%;
     color:rgba(0, 70, 140, 1);
-    font-family: Indie Flower;
+    font-family: Indie Flower, arial, sans-serif, Helvetica;
 }
 
 #image-choices {
@@ -223,10 +224,10 @@ header {
 
 /*score area*/
 #result-container {
-    margin: 5% 0 0;
+    margin: 5% 0 2%;
 }
 #scores-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 25px;
     display: flex;
@@ -256,7 +257,6 @@ header {
 
 .score-p {
     color:#00468c;
-    margin: 0.5rem;
 }
 
 #your-score, #computer-score {
@@ -402,7 +402,7 @@ header {
         font-size: 2.5rem;
     }
     #rules {
-        margin: 2rem auto 0;
+        margin: 2rem auto 2%;
     }
     #make-choice {
         font-size: 2rem;
@@ -433,9 +433,9 @@ header {
         margin: 2rem auto;
     }
     #results-area-winner {
-        margin: 5% auto 0;
+        margin: 5% auto 2%;
     }
     #results-area-loser {
-        margin: 5% auto 0;
+        margin: 5% auto 2%;
     }
 }
