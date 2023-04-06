@@ -47,7 +47,7 @@ p {
   }
 
 /*button and image style defaults*/
-button {
+.button {
     border: solid white;
     border-radius: 10px;
     color: #803790;
@@ -116,13 +116,13 @@ header {
     color: #000000;
 }
 
-#yes:hover {
+#yes:hover, #yes:focus {
     cursor: pointer;
     color: black;
     background-color: #66ff00;
 }
 
-#no:hover {
+#no:hover, #no:focus {
     cursor: pointer;
     color: black;
     background-color: #fd0e35;
@@ -163,19 +163,19 @@ header {
     color: black;
 }
 
-#savannah:hover {
+#savannah:hover, #savannah:focus {
     cursor: pointer;
     background-color: black;
     color: #ffa500;
 }
 
-#forest:hover {
+#forest:hover, #forest:focus {
     cursor: pointer;
     background-color: white;
     color: #013220;
 }
 
-#meadow:hover {
+#meadow:hover, #meadow:focus {
     cursor: pointer;
     background-color: black;
     color: #ffee00;
@@ -214,9 +214,10 @@ header {
 .animals {
     width: 30%;
     margin: 0.25rem;
+    background: none;
 }
 
-.animals:hover {
+.animals:hover, .animals:focus {
     cursor: pointer;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -335,7 +336,7 @@ header {
     color: #000000;
 }
 
-#play-again-winner:hover {
+#play-again-winner:hover, #play-again-winner:focus {
     cursor: pointer;
     background-color: #803790;
     color: #66ff00;
@@ -369,7 +370,7 @@ header {
     color: #66ff00;
 }
 
-#play-again-loser:hover {
+#play-again-loser:hover, #play-again-loser:focus {
     cursor: pointer;
     background-color: #66ff00;
     color: #000000;
@@ -412,7 +413,7 @@ header {
     p {
         font-size: 2rem;
     }
-    button {
+    .button {
         font-size: 2rem;
         padding: 0.75re 1rem;
     }
