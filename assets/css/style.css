@@ -279,6 +279,7 @@ header {
     animation: glowing 1300ms infinite;
 }
 
+/*glowing border learnt from https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
 @keyframes glowing {
     0%  {
         background-color: #be03fd;
