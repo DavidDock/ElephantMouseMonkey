@@ -100,7 +100,7 @@ const resets = document.getElementsByClassName("resets");
 //all let variables needed through game
 let currentQuestion = {};
 let userChoice;
-let computerChoice
+let computerChoice;
 let userScore = 0;
 let computerScore = 0;
 
