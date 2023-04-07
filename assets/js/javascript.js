@@ -70,6 +70,7 @@ function incorrect() {
 savannah.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("savannah-add");
+    background.ariaLabel = 'Background cartoon image of a savannah';
     background.classList.remove("meadow-add");
     background.classList.remove("forest-add");
     rules.style.display = "none";
@@ -78,6 +79,7 @@ savannah.addEventListener('click', function() {
 forest.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("forest-add");
+    background.ariaLabel = 'Background cartoon image of a forest';
     background.classList.remove("savannah-add");
     background.classList.remove("meadow-add");
     rules.style.display = "none";
@@ -86,6 +88,7 @@ forest.addEventListener('click', function() {
   meadow.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("meadow-add");
+    background.ariaLabel = 'Background cartoon image of a meadow';
     background.classList.remove("savannah-add");
     background.classList.remove("forest-add");
     rules.style.display = "none";
