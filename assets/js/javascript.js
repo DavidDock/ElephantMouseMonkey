@@ -281,24 +281,9 @@ function gameOver() {
 
 //getting each play again button
 //event listener for button click
-//takes player to pick destination area and resets scores
+//reloads window
 for (let reset of resets) {
   reset.addEventListener("click", function() {
-  resultsAreaWinner.style.display= "none";
-  resultsAreaLoser.style.display= "none";
-  rules.style.display = "flex";
-  userScore = 0;
-  computerScore = 0;
-  yourScoreDisplay.innerHTML = userScore;
-  computerScoreDisplay.innerHTML = computerScore;
-  yourImage.src = `assets/images/animals.png`;
-  yourImage.alt = `alt="Image of 3 possible animal choices: elephant, mouse and monkey"`;
-  computerImage.src = `assets/images/animals.png`;
-  computerImage.alt = `alt="Image of 3 possible animal choices: elephant, mouse and monkey"`;
-  yourImage.classList.remove("lose");
-  computerImage.classList.remove("lose");
-  yourImage.classList.remove("win");
-  computerImage.classList.remove("win");
-  result.style.opacity= "0";
+  location.reload();
   })
 }  
