@@ -276,7 +276,7 @@ header {
 #result {
     background-color: rgba(128,55,144, 0.8);
     color: #ffffff;
-    width: fit-content;
+    max-width: 90%;
     margin: 5% auto 0;
     border-radius: 10px;
     padding: 0.75rem;
