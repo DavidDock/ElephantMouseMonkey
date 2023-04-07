@@ -9,7 +9,7 @@ const question = document.getElementById("question");
 const forest = document.getElementById("forest");
 const savannah = document.getElementById("savannah");
 const meadow = document.getElementById("meadow");
-const body = document.getElementsByTagName("body")[0]
+const background = document.getElementById("background");
 const gameContainer = document.getElementById("game-container");
 const yourImage = document.getElementById("your-image");
 const computerImage = document.getElementById("computer-image")
@@ -68,24 +68,26 @@ function incorrect() {
 //event listeners for destination choice buttons
 //runs functions inside event listner to move to relevant game area
 savannah.addEventListener('click', function() {
-    body.classList.add("savannah-add");
-    body.classList.remove("meadow-add");
-    body.classList.remove("forest-add");
+    background.classList.remove("jungle-add");
+    background.classList.add("savannah-add");
+    background.classList.remove("meadow-add");
+    background.classList.remove("forest-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
-
   });
 forest.addEventListener('click', function() {
-    body.classList.add("forest-add");
-    body.classList.remove("savannah-add");
-    body.classList.remove("meadow-add");
+    background.classList.remove("jungle-add");
+    background.classList.add("forest-add");
+    background.classList.remove("savannah-add");
+    background.classList.remove("meadow-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
   meadow.addEventListener('click', function() {
-    body.classList.add("meadow-add");
-    body.classList.remove("savannah-add");
-    body.classList.remove("forest-add");
+    background.classList.remove("jungle-add");
+    background.classList.add("meadow-add");
+    background.classList.remove("savannah-add");
+    background.classList.remove("forest-add");
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });

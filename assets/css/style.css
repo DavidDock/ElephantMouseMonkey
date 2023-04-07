@@ -9,16 +9,20 @@
     border: 0;
 }
 
-/*body*/
-body {
+/*background image span*/
+#background {
     min-height: 100vh;
-    background-image: url('../images/jungle.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: inline-block;
   }
 
   /*classes for body background image change*/
+
+.jungle-add {
+    background-image: url('../images/jungle.webp');
+}  
 .savannah-add {
     background-image: url('../images/savannah.webp');
   }
@@ -276,7 +280,7 @@ header {
 #result {
     background-color: rgba(128,55,144, 0.8);
     color: #ffffff;
-    max-width: 90%;
+    width: fit-content;
     margin: 5% auto 0;
     border-radius: 10px;
     padding: 0.75rem;

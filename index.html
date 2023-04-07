@@ -1,131 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description"
-    content="Pick Elephant, Mouse or Monkey in simple fun game suitble for children." />
-    <meta name="keywords"
-    content="elephant, mouse, monkey, fun game, simple game, children game, animal game" />
+    <meta name="Description" content="Pick Elephant, Mouse or Monkey in simple fun game suitble for children." />
+    <meta name="keywords" content="elephant, mouse, monkey, fun game, simple game, children game, animal game" />
 
-<!--Favicon-->
-<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
-<!--CSS stylesheet-->
+    <!--CSS stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-<!--Title-->
+    <!--Title-->
     <title>Elephant Mouse Monkey</title>
-    
+
 </head>
+
 <body>
+    <span id="background" class="jungle-add" role="img" aria-label="Background cartoon image of a jungle.">
+        <!--Header with logo and title-->
+        <header id="header">
+            <span id="logo">
+                <img src="assets/images/logo.png"
+                    alt="A logo for the website. Cartoon drawings of an elephant, mouse and monkey." width="1099"
+                    height="250">
+            </span>
+            <h1 id="title">ELEPHANT&nbsp;&nbsp;&nbsp;&nbsp;MOUSE&nbsp;&nbsp;&nbsp;&nbsp;MONKEY</h1>
+        </header>
 
-<!--Header with logo and title-->
-<header id="header">
-    <span id="logo">
-    <img src="assets/images/logo.png" alt="A logo for the website. Cartoon drawings of an elephant, mouse and monkey." width="1099" height="250">
-    </span>
-    <h1 id="title">ELEPHANT&nbsp;&nbsp;&nbsp;&nbsp;MOUSE&nbsp;&nbsp;&nbsp;&nbsp;MONKEY</h1>  
-</header>
-
-<!--Opening question section with buttons-->
-<section id="question-section">
-    <h2 id="answer">Answer to Play</h2>
-    <br>
-    <p id="question">Can an ELEPHANT pick up a grain of rice?</p>
-    <div>
-    <button class="button" id="yes">YES</button><button class="button" id="no">NO</button>
-    </div>
-    <br>
-    <p id="wrong">Oh Yes They Can!!</p>
-</section>
-
-<!--Rules section and destination selection buttons-->
-<section id="rules">
-    <h2> First to 5 </h2>
-    <p>MOUSE scares ELEPHANT</p> 
-    <p class="point-rules">Mouse = 1 point</p>
-    <p>MONKEY catches MOUSE</p>
-    <p class="point-rules">Monkey = 1 point</p>
-    <p>ELEPHANT squashes MONKEY!!</p>
-    <p class="point-rules">Elephant = 1 point</p>
-    <br>
-    <h3 id="pick"> Choose your Destination
-    </h3>
-    <br>
-    <div id="destination-buttons">
-      <button class="button" id="savannah">Savannah</button>
-      <button class="button" id="forest">Forest</button>
-      <button class="button" id="meadow">Meadow</button>
-    </div>  
-</section>
-
-<!--game area-->
-<div id="game-container">
-    <div id="large-screen-container">
-<!--choice section-->   
-        <section id="choice-container">
-            <h3 id="make-choice">Make your choice</h3>
-            <div id="image-choices">
-                <button class="animals" id="elephant">
-                <img src="assets/images/elephant.png" alt="Image of cartoon elephant. Choose elephant" width="500" height="500">
-                </button>
-                <button class="animals" id="mouse">
-                <img src="assets/images/mouse.png" alt="Image of cartoon mouse. Choose mouse" width="500" height="500">
-                </button>
-                <button class="animals" id="monkey">
-                <img src="assets/images/monkey.png" alt="Image of cartoon monkey. Choose monkey" width="500" height="500">
-                </button>
-            </div>  
+        <!--Opening question section with buttons-->
+        <section id="question-section">
+            <h2 id="answer">Answer to Play</h2>
+            <br>
+            <p id="question">Can an ELEPHANT pick up a grain of rice?</p>
+            <div>
+                <button class="button" id="yes">YES</button><button class="button" id="no">NO</button>
+            </div>
+            <br>
+            <p id="wrong">Oh Yes They Can!!</p>
         </section>
 
-        <!--scores and current pick section-->
-        <section id="scores-container">
-            <div id="your-score-container">
-                <p class="score-p">You<br><span id="your-score">0</span></p>
-                <span class="choice-span">
-                    <img id="your-image" src="assets/images/animals.png" alt="Image of 3 possible animal choices: elephant, mouse and monkey">
-                </span>
+        <!--Rules section and destination selection buttons-->
+        <section id="rules">
+            <h2> First to 5 </h2>
+            <p>MOUSE scares ELEPHANT</p>
+            <p class="point-rules">Mouse = 1 point</p>
+            <p>MONKEY catches MOUSE</p>
+            <p class="point-rules">Monkey = 1 point</p>
+            <p>ELEPHANT squashes MONKEY!!</p>
+            <p class="point-rules">Elephant = 1 point</p>
+            <br>
+            <h3 id="pick"> Choose your Destination
+            </h3>
+            <br>
+            <div id="destination-buttons">
+                <button class="button" id="savannah">Savannah</button>
+                <button class="button" id="forest">Forest</button>
+                <button class="button" id="meadow">Meadow</button>
             </div>
-            <div id="computer-score-container">
-                <p class="score-p">Computer<br><span id="computer-score">0</span></p>
-                <span class="choice-span">
-                    <img id="computer-image" src="assets/images/animals.png" alt="Image of 3 possible animal choices: elephant, mouse and monkey">
-                </span>
+        </section>
+
+        <!--game area-->
+        <div id="game-container">
+            <div id="large-screen-container">
+                <!--choice section-->
+                <section id="choice-container">
+                    <h3 id="make-choice">Make your choice</h3>
+                    <div id="image-choices">
+                        <button class="animals" id="elephant">
+                            <img src="assets/images/elephant.png" alt="Image of cartoon elephant. Choose elephant"
+                                width="500" height="500">
+                        </button>
+                        <button class="animals" id="mouse">
+                            <img src="assets/images/mouse.png" alt="Image of cartoon mouse. Choose mouse" width="500"
+                                height="500">
+                        </button>
+                        <button class="animals" id="monkey">
+                            <img src="assets/images/monkey.png" alt="Image of cartoon monkey. Choose monkey" width="500"
+                                height="500">
+                        </button>
+                    </div>
+                </section>
+
+                <!--scores and current pick section-->
+                <section id="scores-container">
+                    <div id="your-score-container">
+                        <p class="score-p">You<br><span id="your-score">0</span></p>
+                        <span class="choice-span">
+                            <img id="your-image" src="assets/images/animals.png"
+                                alt="Image of 3 possible animal choices: elephant, mouse and monkey">
+                        </span>
+                    </div>
+                    <div id="computer-score-container">
+                        <p class="score-p">Computer<br><span id="computer-score">0</span></p>
+                        <span class="choice-span">
+                            <img id="computer-image" src="assets/images/animals.png"
+                                alt="Image of 3 possible animal choices: elephant, mouse and monkey">
+                        </span>
+                    </div>
+                </section>
             </div>
-        </section> 
-    </div>
-    <p id="result">Result =</p>
-</div>
+            <p id="result">Result =</p>
+        </div>
 
-<!--results area-->
-<!--winner-->
-<section id="results-area-winner">
-    <h2 id="winner">Congratulations!</h2>
-    <br>
-    <p>You won</p>
-    <br>
-    <p>Do you want to play again?</p>
-    <p>Maybe try a new game destination</p>
-    <br>
-    <button class="resets button" id="play-again-winner">Play Again</button>
-</section>
+        <!--results area-->
+        <!--winner-->
+        <section id="results-area-winner">
+            <h2 id="winner">Congratulations!</h2>
+            <br>
+            <p>You won</p>
+            <br>
+            <p>Do you want to play again?</p>
+            <p>Maybe try a new game destination</p>
+            <br>
+            <button class="resets button" id="play-again-winner">Play Again</button>
+        </section>
 
-<!--loser-->
-<section id="results-area-loser">
-    <h2 id="loser">Comiserations!</h2>
-    <br>
-    <p>Sorry you lost this time.</p>
-    <br>
-    <p>Do you want to try again?</p>
-    <p>Maybe pick a new game destination</p>
-    <br>
-    <button class="resets button" id="play-again-loser">Play Again</button>
-</section>
-<!--javascript-->    
-    <script src="assets/js/javascript.js"></script>
+        <!--loser-->
+        <section id="results-area-loser">
+            <h2 id="loser">Comiserations!</h2>
+            <br>
+            <p>Sorry you lost this time.</p>
+            <br>
+            <p>Do you want to try again?</p>
+            <p>Maybe pick a new game destination</p>
+            <br>
+            <button class="resets button" id="play-again-loser">Play Again</button>
+        </section>
+        <!--javascript-->
+    </span>   
+        <script src="assets/js/javascript.js"></script>
 </body>
+
 </html>
