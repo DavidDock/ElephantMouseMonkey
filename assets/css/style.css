@@ -115,6 +115,12 @@ header {
     color: black;
 }
 
+#question-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #wrong {
     display: none;
     color: #000000;
