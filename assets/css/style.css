@@ -380,7 +380,7 @@ header {
     color: #000000;
 }
 
-#play-again-loser{
+#play-again-loser {
     background-color: #000000;
     color: #66ff00;
 }
@@ -389,6 +389,23 @@ header {
     cursor: pointer;
     background-color: #66ff00;
     color: #000000;
+}
+
+#error-container {
+    background-color: #fc74fd ;
+    margin: 10% auto 2%;
+    width: fit-content;
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+#oops {
+    max-width: 50%;
 }
 
 /*media query min 600px*/
