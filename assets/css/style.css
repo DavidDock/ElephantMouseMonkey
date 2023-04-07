@@ -403,6 +403,9 @@ header {
     align-items: center;
     padding: 1rem;
     border-radius: 25px;
+}
+
+.error-writing {
     text-align: center;
     color: #000000;
 }
