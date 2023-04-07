@@ -1,25 +1,74 @@
 //question list
 const questions = [
   {
-    question: "can an elephant pick up a grain of rice?",
-    a: "yes",
-    b: "no",
-    c: "maybe",
-    answer: "yes",
+    question: "Which animal can hear out of its feet?",
+    a: "Elephant",
+    b: "Mouse",
+    c: "Monkey",
+    answer: "Elephant",
   },
   {
-    question: "which animal can sing?",
-    a: "mouse",
-    b: "monkey",
-    c: "elephant",
-    answer: "mouse",
+    question: "How fast can a Monkey run?",
+    a: "15mph",
+    b: "25mph",
+    c: "Over 30mph",
+    answer: "Over 30mph",
   },
   {
-    question: "which animal isnt born blind?",
-    a: "mouse",
-    b: "elephant",
-    c: "monkey",
-    answer: "monkey",
+    question: "Whats the smallest object an Elephant can pick up?",
+    a: "Watermelon",
+    b: "Tennis ball",
+    c: "Grain of rice",
+    answer: "Grain of rice",
+  },
+  {
+    question: "What animal isn't born blind?",
+    a: "Elephant",
+    b: "Mouse",
+    c: "Monkey",
+    answer: "Monkey",
+  },
+  {
+    question: "Which animal can sing?",
+    a: "Mouse",
+    b: "Elephant",
+    c: "Monkey",
+    answer: "Mouse",
+  },
+  {
+    question: "How long are Elephants pregnant?",
+    a: "9 Months",
+    b: "18 Months",
+    c: "22 Months",
+    answer: "22 Months",
+  },
+  {
+    question: "Who lives longer?",
+    a: "Mouse",
+    b: "Elephant",
+    c: "Monkey",
+    answer: "Elephant",
+  },
+  {
+    question: "Whats a Mouses favourite food?",
+    a: "Grain",
+    b: "Chocolate",
+    c: "Cheese",
+    answer: "Chocolate",
+  },
+  {
+    question: "How many species of Monkey are there?",
+    a: "Over 264",
+    b: "Under 200",
+    c: "About 147",
+    answer: "Over 264",
+  },
+  {
+    question: "Which animal sleeps least?",
+    a: "Monkey",
+    b: "Mouse",
+    c: "Elephant",
+    answer: "Elephant",
   },
 ];
 
@@ -57,7 +106,7 @@ let computerScore = 0;
 
 //get random question from question list
 //display in html
-const randomNumber = Math.floor(Math.random() * 3);
+const randomNumber = Math.floor(Math.random() * 10);
 currentQuestion = questions[randomNumber];
 question.innerText = currentQuestion.question;
 option1.innerText = currentQuestion.a;
