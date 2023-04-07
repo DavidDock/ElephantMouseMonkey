@@ -88,7 +88,7 @@ const meadow = document.getElementById("meadow");
 const background = document.getElementById("background");
 const gameContainer = document.getElementById("game-container");
 const yourImage = document.getElementById("your-image");
-const computerImage = document.getElementById("computer-image")
+const computerImage = document.getElementById("computer-image");
 const animals = document.getElementsByClassName("animals");
 const result = document.getElementById("result");
 const yourScoreDisplay = document.getElementById("your-score");
@@ -99,7 +99,7 @@ const resets = document.getElementsByClassName("resets");
 
 //all let variables needed through game
 let currentQuestion = {};
-let userChoice
+let userChoice;
 let computerChoice
 let userScore = 0;
 let computerScore = 0;
@@ -125,7 +125,7 @@ for (let option of options) {
       this.style.display= "none";
       incorrect();
     }
-  })
+  });
   }
 
 //function inncorect to inform user answer is wrong and choose again
@@ -139,7 +139,7 @@ function incorrect() {
 function correct() {
   questionSection.style.display = "none";
   rules.style.display = "flex"; 
-};
+}
 
 //get each animal choice from array
 //add event listener for each animal
@@ -156,7 +156,7 @@ for (let animal of animals) {
     getComputerChoice();
     getResult();
     gameOver();
-  })
+  });
   }
 
 //event listeners for destination choice buttons
@@ -214,31 +214,31 @@ function getComputerChoice() {
 function getResult() {
   if (computerChoice === userChoice) {
     draw();
-    result.innerHTML= "ITS A DRAW"
+    result.innerHTML= "ITS A DRAW";
  }
  if (computerChoice === 'elephant' && userChoice === 'mouse') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Mouse scares their Elephant" 
+    result.innerHTML= "YOU WIN <br> your Mouse scares their Elephant" ;
  }
  if (computerChoice === 'elephant' && userChoice === 'monkey') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Elephant squashes your Monkey"
+    result.innerHTML= "YOU LOSE <br> their Elephant squashes your Monkey";
  }
  if (computerChoice === 'mouse' && userChoice === 'monkey') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Monkey catches their Mouse"
+    result.innerHTML= "YOU WIN <br> your Monkey catches their Mouse";
  }
  if (computerChoice === 'mouse' && userChoice === 'elephant') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Mouse scares your Elephant"
+    result.innerHTML= "YOU LOSE <br> their Mouse scares your Elephant";
  }
  if (computerChoice === 'monkey' && userChoice === 'elephant') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Elephant squashes their Monkey"
+    result.innerHTML= "YOU WIN <br> your Elephant squashes their Monkey";
  }
  if (computerChoice === 'monkey' && userChoice === 'mouse') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Monkey catches your Mouse"
+    result.innerHTML= "YOU LOSE <br> their Monkey catches your Mouse";
  }
 }
 
@@ -287,5 +287,5 @@ function gameOver() {
 for (let reset of resets) {
   reset.addEventListener("click", function() {
   location.reload();
-  })
+  });
 }  
