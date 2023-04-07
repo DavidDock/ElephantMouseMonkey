@@ -120,12 +120,12 @@ header {
     color: #000000;
 }
 
-#yes:hover, #yes:focus {
+.options:hover, .options:focus {
     cursor: pointer;
     color: black;
     background-color: #66ff00;
 }
-
+/*
 #no:hover, #no:focus {
     cursor: pointer;
     color: black;

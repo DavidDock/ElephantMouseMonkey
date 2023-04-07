@@ -1,11 +1,38 @@
+//question list
+const questions = [
+  {
+    question: "can an elephant pick up a grain of rice?",
+    a: "yes",
+    b: "no",
+    c: "maybe",
+    answer: "yes",
+  },
+  {
+    question: "which animal can sing?",
+    a: "mouse",
+    b: "monkey",
+    c: "elephant",
+    answer: "mouse",
+  },
+  {
+    question: "which animal isnt born blind?",
+    a: "mouse",
+    b: "elephant",
+    c: "monkey",
+    answer: "monkey",
+  },
+];
+
 //all const needed
+const options = document.getElementsByClassName('options');
 const questionSection = document.getElementById("question-section");
-const rules = document.getElementById("rules");
-const yes = document.getElementById("yes");
-const no = document.getElementById("no");
-const wrong = document.getElementById("wrong");
 const answer = document.getElementById("answer");
 const question = document.getElementById("question");
+const option1 = document.getElementById("option1");
+const option2 = document.getElementById("option2");
+const option3 = document.getElementById("option3");
+const wrong = document.getElementById("wrong");
+const rules = document.getElementById("rules");
 const forest = document.getElementById("forest");
 const savannah = document.getElementById("savannah");
 const meadow = document.getElementById("meadow");
@@ -22,10 +49,48 @@ const resultsAreaLoser = document.getElementById("results-area-loser");
 const resets = document.getElementsByClassName("resets");
 
 //all let variables needed through game loops
+let currentQuestion = {};
 let userChoice
 let computerChoice
 let userScore = 0;
 let computerScore = 0;
+
+//get random question from question list
+//display in html
+const randomNumber = Math.floor(Math.random() * 3);
+currentQuestion = questions[randomNumber];
+question.innerText = currentQuestion.question;
+option1.innerText = currentQuestion.a;
+option2.innerText = currentQuestion.b;
+option3.innerText = currentQuestion.c;
+
+//add event listener for each user answer
+//determain if correct
+//execute relevent function
+for (let option of options) {
+  option.addEventListener("click", function() {
+    const picked = this.innerHTML;
+    if (picked === currentQuestion.answer) {
+      correct();
+    } else {
+      this.style.display= "none";
+      incorrect();
+    }
+  })
+  }
+
+//function inncorect to inform user answer is wrong and choose again
+function incorrect() {
+  questionSection.style.backgroundColor= "#fd0e35";
+  wrong.style.display= "block";
+  answer.style.display= "none"; 
+}
+
+//corect answer function - takes user to rules area
+function correct() {
+  questionSection.style.display = "none";
+  rules.style.display = "flex"; 
+};
 
 //get each animal choice from array
 //add event listener for each animal
@@ -44,26 +109,6 @@ for (let animal of animals) {
     gameOver();
   })
   }
-
-//event listeners for correct and incorrect answer to question
-//corect answer (yes button) takes user to rules area
-//incorrect answer (no button) runs function incorrect
-yes.addEventListener('click', function() {
-  questionSection.style.display = "none";
-  rules.style.display = "flex"; 
-});
-
-no.addEventListener('click', incorrect);
-
-//function inncorect to inform user answer is wrong
-function incorrect() {
-  questionSection.style.backgroundColor= "#fd0e35";
-  wrong.style.display= "block";
-  answer.style.display= "none";
-  no.style.display= "none";
-  question.style.display= "none";
-  yes.innerHTML= "Play Game"; 
-}
 
 //event listeners for destination choice buttons
 //runs functions inside event listner to move to relevant game area
@@ -94,16 +139,6 @@ forest.addEventListener('click', function() {
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
-
-//function inncorect to inform user answer is wrong
-function incorrect() {
-    questionSection.style.backgroundColor= "#fd0e35";
-    wrong.style.display= "block";
-    answer.style.display= "none";
-    no.style.display= "none";
-    question.style.display= "none";
-    yes.innerHTML= "Play Game"; 
-  }
 
   //function to pick random number for computer
   //asign the computer a choice
