@@ -118,6 +118,7 @@ header {
 #wrong {
     display: none;
     color: #000000;
+    font-family: kranky, Helvetica, arial, sans-serif;
 }
 
 .options:hover, .options:focus {
