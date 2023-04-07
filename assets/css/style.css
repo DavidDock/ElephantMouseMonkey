@@ -391,6 +391,7 @@ header {
     color: #000000;
 }
 
+/*404 page*/
 #error-container {
     background-color: #fc74fd ;
     margin: 10% auto 2%;
@@ -402,6 +403,8 @@ header {
     align-items: center;
     padding: 1rem;
     border-radius: 25px;
+    text-align: center;
+    color: #000000;
 }
 
 #oops {
