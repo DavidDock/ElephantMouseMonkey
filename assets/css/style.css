@@ -19,10 +19,10 @@
   }
 
   /*classes for body background image change*/
-
 .jungle-add {
     background-image: url('../images/jungle.webp');
-}  
+} 
+
 .savannah-add {
     background-image: url('../images/savannah.webp');
   }
@@ -68,7 +68,7 @@ p {
     padding: 0.5rem;
 }
 
-  /*header with logo and title*/
+/*header with logo and title*/
 header {
     background-color: rgba(0, 70, 140, 0.8);
     max-width: 85%;
@@ -131,12 +131,6 @@ header {
     cursor: pointer;
     color: black;
     background-color: #66ff00;
-}
-/*
-#no:hover, #no:focus {
-    cursor: pointer;
-    color: black;
-    background-color: #fd0e35;
 }
 
 /*Rules section and destination selection buttons*/
@@ -242,6 +236,7 @@ header {
 #result-container {
     margin: 5% 0 2%;
 }
+
 #scores-container {
     width: 70%;
     margin: 0 auto;
@@ -370,6 +365,7 @@ header {
     padding: 1rem;
     border-radius: 25px;
 }
+
 #loser {
     background-color: #000000;
     padding: 1rem;
@@ -417,6 +413,7 @@ header {
 #error-button {
     background-color: #ffffff;
 }
+
 #error-button:hover, #error-button:focus {
     background-color: #000000;
 }

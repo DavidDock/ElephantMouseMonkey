@@ -97,7 +97,7 @@ const resultsAreaWinner = document.getElementById("results-area-winner");
 const resultsAreaLoser = document.getElementById("results-area-loser");
 const resets = document.getElementsByClassName("resets");
 
-//all let variables needed through game loops
+//all let variables needed through game
 let currentQuestion = {};
 let userChoice
 let computerChoice
@@ -114,7 +114,7 @@ option2.innerText = currentQuestion.b;
 option3.innerText = currentQuestion.c;
 
 //add event listener for each user answer
-//determain if correct
+//determine if correct
 //execute relevent function
 for (let option of options) {
   option.addEventListener("click", function() {
@@ -160,7 +160,7 @@ for (let animal of animals) {
   }
 
 //event listeners for destination choice buttons
-//runs functions inside event listner to move to relevant game area
+//runs functions to move to relevant game area and hide others
 savannah.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("savannah-add");
@@ -170,6 +170,7 @@ savannah.addEventListener('click', function() {
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
+
 forest.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("forest-add");
@@ -179,6 +180,7 @@ forest.addEventListener('click', function() {
     rules.style.display = "none";
     gameContainer.style.display= "block";
   });
+
   meadow.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("meadow-add");
@@ -189,10 +191,10 @@ forest.addEventListener('click', function() {
     gameContainer.style.display= "block";
   });
 
-  //function to pick random number for computer
-  //asign the computer a choice
-  //display comuter choice image in html
-  //function inncorect to inform user answer is wrong
+//function to pick random number for computer
+//asign the computer a choice
+//display comuter choice image in html
+//function inncorect to inform user answer is wrong
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
