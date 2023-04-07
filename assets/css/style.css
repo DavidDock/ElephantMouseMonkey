@@ -408,6 +408,13 @@ header {
     max-width: 50%;
 }
 
+#error-button {
+    background-color: #ffffff;
+}
+#error-button:hover, #error-button:focus {
+    background-color: #000000;
+}
+
 /*media query min 600px*/
 @media (min-width: 600px) {
     h2, h3 {
