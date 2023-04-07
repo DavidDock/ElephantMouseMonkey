@@ -127,11 +127,11 @@ function getResult() {
  }
  if (computerChoice === 'elephant' && userChoice === 'mouse') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Mouse scares off their Elephant" 
+    result.innerHTML= "YOU WIN <br> your Mouse scares their Elephant" 
  }
  if (computerChoice === 'elephant' && userChoice === 'monkey') {
     computerWins();
-    result.innerHTML= "YOU LOOSE <br> their Elephant squashes your Monkey"
+    result.innerHTML= "YOU LOSE <br> their Elephant squashes your Monkey"
  }
  if (computerChoice === 'mouse' && userChoice === 'monkey') {
     youWin();
@@ -139,7 +139,7 @@ function getResult() {
  }
  if (computerChoice === 'mouse' && userChoice === 'elephant') {
     computerWins();
-    result.innerHTML= "YOU LOOSE <br> their Mouse scares off your Elephant"
+    result.innerHTML= "YOU LOSE <br> their Mouse scares your Elephant"
  }
  if (computerChoice === 'monkey' && userChoice === 'elephant') {
     youWin();
@@ -147,7 +147,7 @@ function getResult() {
  }
  if (computerChoice === 'monkey' && userChoice === 'mouse') {
     computerWins();
-    result.innerHTML= "YOU LOOSE <br> their Monkey catches your Mouse"
+    result.innerHTML= "YOU LOSE <br> their Monkey catches your Mouse"
  }
 }
 
