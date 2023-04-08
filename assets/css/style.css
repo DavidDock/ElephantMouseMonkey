@@ -274,6 +274,8 @@ header {
 
 .score-p {
     color:#00468c;
+    font-family: Indie Flower, arial, sans-serif, Helvetica;
+    text-align: center;
 }
 
 #your-score, #computer-score {
