@@ -151,7 +151,7 @@ function correct() {
 for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");
-    yourImage.src = `assets/images/${userChoice}.png`;
+    yourImage.src = `assets/images/${userChoice}.webp`;
     yourImage.alt = `image of your animal choice, which was ${userChoice}`;
     getComputerChoice();
     getResult();
@@ -206,7 +206,7 @@ function getComputerChoice() {
   if (randomNumber === 2) {
      computerChoice = 'monkey';
   }
-  computerImage.src = `assets/images/${computerChoice}.png`;
+  computerImage.src = `assets/images/${computerChoice}.webp`;
   computerImage.alt = `image of the animal the computer choice, which was ${computerChoice}`;
 }
 
