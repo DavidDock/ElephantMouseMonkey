@@ -398,6 +398,16 @@ header {
 }
 
 /*404 page*/
+#background-error {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url('../images/jungle.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+}
+
 #error-container {
     background-color: #fc74fd ;
     margin: 10% auto 2%;
