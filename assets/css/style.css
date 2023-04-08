@@ -43,7 +43,7 @@ h2, h3 {
   }
 
 p {
-    font-family: Indie Flower, arial, sans-serif, Helvetica;
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
@@ -56,7 +56,7 @@ p {
     border: solid white;
     border-radius: 10px;
     color: #803790;
-    font-family: Indie Flower, arial, sans-serif, Helvetica;
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     font-weight: 800;
     padding: 0.25rem 0.75rem;
     font-size: 1.5rem;
@@ -216,7 +216,7 @@ header {
 #make-choice {
     padding: 2%;
     color:rgba(0, 70, 140, 1);
-    font-family: Indie Flower, arial, sans-serif, Helvetica;
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
 }
 
 #image-choices {
@@ -276,7 +276,7 @@ header {
 
 .score-p {
     color:#00468c;
-    font-family: Indie Flower, arial, sans-serif, Helvetica;
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     text-align: center;
 }
 
@@ -470,7 +470,7 @@ header {
     }
     .button {
         font-size: 2rem;
-        padding: 0.75re 1rem;
+        padding: 0.75rem 1rem;
     }
     #title {
         font-size: 2.5rem;
