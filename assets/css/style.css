@@ -148,6 +148,11 @@ header {
 }
 
 .point-rules {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#pick {
     color: #66ff00;
 }
 
@@ -155,7 +160,6 @@ header {
     display: flex;
     flex-direction: column;
 }
-
 
 #savannah {
     background-color: #ffa500;
@@ -224,6 +228,8 @@ header {
     width: 30%;
     margin: 0.25rem;
     background: none;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .animals:hover, .animals:focus {
@@ -429,6 +435,9 @@ header {
     #title {
         font-size: 1.75rem;
     }
+    .point-rules {
+        font-size: 1.2rem;
+    }
     #destination-buttons {
         display: flex;
         flex-direction: row;
@@ -467,6 +476,9 @@ header {
     }
     #rules {
         margin: 2rem auto 2%;
+    }
+    .point-rules {
+        font-size: 1.75rem;
     }
     #make-choice {
         font-size: 2rem;
