@@ -140,12 +140,13 @@ header {
     margin: 10% auto 2%;
     width: fit-content;
     max-width: 80%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    border-radius: 25px;  
+    border-radius: 25px;
+    opacity: 0;
 }
 
 .point-rules {
