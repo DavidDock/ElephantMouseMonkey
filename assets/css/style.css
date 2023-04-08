@@ -399,7 +399,7 @@ header {
 
 /*404 page*/
 #error-container {
-    background-color: #013220 ;
+    background-color: #fc74fd ;
     margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
@@ -413,7 +413,7 @@ header {
 
 .error-writing {
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 
 #oops {
