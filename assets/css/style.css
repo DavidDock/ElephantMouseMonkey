@@ -53,8 +53,6 @@ h2, h3, h4 {
   }
 
 p {
-    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
-    text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
     color: #08e8de;
@@ -82,6 +80,10 @@ p {
 /*font style and color classes*/
 .kranky {
     font-family: kranky, Helvetica, arial, sans-serif;
+}
+
+.indie {
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
 }
 
 .black {
