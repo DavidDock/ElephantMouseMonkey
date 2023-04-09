@@ -471,7 +471,7 @@ header {
     p {
         font-size: 1.5rem;
     }
-    #title {
+    #title, .score-p {
         font-size: 1.75rem;
     }
     .point-rules {
@@ -481,15 +481,9 @@ header {
         display: flex;
         flex-direction: row;
     }
-    #make-choice {
+    #make-choice, #result {
         font-size: 1.5rem;
-    }
-    #result {
-        font-size: 1.5rem;
-    }
-    .score-p {
-       font-size: 1.75rem;
-    }    
+    }  
     #your-score, #computer-score {
         font-size: 2.25rem;
     }
@@ -497,18 +491,14 @@ header {
 
 /*media query min 1024px*/
 @media (min-width: 1024px){
-    h2, h3 {
+    h2, h3, #title {
         font-size: 2.5rem;
     }
-    p {
+    #result, .score-p, #make-choice, p, .button {
         font-size: 2rem;
     }
     .button {
-        font-size: 2rem;
         padding: 0.75rem 1rem;
-    }
-    #title {
-        font-size: 2.5rem;
     }
     #question-section {
         margin-top: 2rem;
@@ -519,15 +509,12 @@ header {
     .point-rules {
         font-size: 1.75rem;
     }
-    #make-choice {
-        font-size: 2rem;
-    }
     #large-screen-container{
         display: flex;
         align-items: center;
         margin: 0 2rem;
     }
-    #choice-container {
+    #choice-container, #computer-score-container {
         margin: 0;
     }
     #scores-container {
@@ -535,25 +522,13 @@ header {
         margin: 0;
         gap: 0;
     }
-    #computer-score-container {
-        margin: 0;
-    }
-    #result {
-        font-size: 2rem;
-    }
-    .score-p {
-        font-size: 2rem;
-    }
     #your-score, #computer-score {
         font-size: 2.5rem;
     }
     #result{
         margin: 2rem auto;
     }
-    #results-area-winner {
-        margin: 5% auto 2%;
-    }
-    #results-area-loser {
+    #results-area-winner, #results-area-loser  {
         margin: 5% auto 2%;
     }
 }
