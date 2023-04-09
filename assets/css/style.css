@@ -14,7 +14,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-y: overlay;
-    overscroll-behavior: none;
+    overscroll-behavior: contain-x;
 }
 
 /*background image div*/
