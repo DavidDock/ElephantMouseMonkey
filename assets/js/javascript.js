@@ -138,7 +138,7 @@ function incorrect() {
 //corect answer function - takes user to rules area
 function correct() {
   questionSection.style.display = "none";
-  rules.style.opacity = "1"; 
+  rules.style.display = "flex"; 
 }
 
 //get each animal choice from array
