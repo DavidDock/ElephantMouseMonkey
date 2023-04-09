@@ -9,7 +9,11 @@
     border: 0;
 }
 
-/*body and html*/
+/*
+body and html
+to stop width increasing and backgound jumping when scrollbar included add overflow-y: overflow :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome
+to stop mobile overscroll effect overflow-behavour: none :learnt from https://www.youtube.com/watch?v=rwriYAFY1NU
+*/
 body, html {
     height: 100%;
     width: 100%;
