@@ -130,7 +130,7 @@ for (let option of options) {
 
 //function inncorect to inform user answer is wrong and choose again
 function incorrect() {
-  questionSection.style.backgroundColor= "#fd0e35";
+  questionSection.style.backgroundColor= "rgba(253,14,53, 0.8)";
   wrong.style.display= "block";
   answer.style.display= "none"; 
 }
