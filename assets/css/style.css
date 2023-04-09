@@ -14,7 +14,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-y: overlay;
-    overscroll-behavior: contain-x;
+    overscroll-behavior: none;
 }
 
 /*background image div*/
@@ -145,7 +145,7 @@ header {
 /*Rules section and destination selection buttons*/
 #rules {
     background-color: rgba(128,55,144, 0.9);
-    margin: 10% auto 0;
+    margin: 10% auto 2%;
     width: fit-content;
     max-width: 80%;
     display: none;
@@ -406,8 +406,8 @@ header {
 
 /*404 page*/
 #background-error {
-    min-height: 100vh;
-    min-width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
     background-image: url('../images/jungle.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -496,7 +496,7 @@ header {
         margin-top: 2rem;
     }
     #rules {
-        margin: 2rem auto 0;
+        margin: 2rem auto 2%;
     }
     .point-rules {
         font-size: 1.75rem;
