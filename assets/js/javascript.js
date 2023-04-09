@@ -152,7 +152,7 @@ for (let animal of animals) {
   animal.addEventListener("click", function() {
     userChoice = this.getAttribute("id");
     yourImage.src = `assets/images/${userChoice}.webp`;
-    yourImage.alt = `image of cartoon ${userChoice}`;
+    yourImage.alt = `Your choice: cartoon ${userChoice}`;
     getComputerChoice();
     getResult();
     gameOver();
@@ -207,7 +207,7 @@ function getComputerChoice() {
      computerChoice = 'monkey';
   }
   computerImage.src = `assets/images/${computerChoice}.webp`;
-  computerImage.alt = `image of cartoon ${computerChoice}`;
+  computerImage.alt = `Computers choice: cartoon ${computerChoice}`;
 }
 
 //function to get result and from each round and run relevant function
