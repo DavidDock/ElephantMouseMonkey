@@ -13,6 +13,7 @@
 body, html {
     height: 100%;
     width: 100%;
+    text-align: center;
     overflow-y: overlay;
     overscroll-behavior: none;
 }
@@ -45,9 +46,10 @@ body, html {
 }
 
  /*headings and paragraph style defaults*/
-h2, h3 {
-    font-family: kranky, Helvetica, arial, sans-serif;
+h2, h3, h4 {
+    font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     color: white;
+    padding: 0.2rem;
   }
 
 p {
@@ -77,6 +79,19 @@ p {
     padding: 0.5rem;
 }
 
+/*font style and color classes*/
+.kranky {
+    font-family: kranky, Helvetica, arial, sans-serif;
+}
+
+.black {
+    color: #000000;
+}
+
+.cobalt {
+    color: #08e8de;
+}
+
 /*header with logo and title*/
 header {
     background-color: rgba(0, 70, 140, 0.8);
@@ -98,7 +113,6 @@ header {
     padding: 0.5rem 1rem 1rem;
     color: #66ff00;
     font-size: 1.1rem;
-    font-family: kranky, Helvetica, arial, sans-serif;
 }
 
 /*question section*/
@@ -133,7 +147,6 @@ header {
 #wrong {
     display: none;
     color: #000000;
-    font-family: kranky, Helvetica, arial, sans-serif;
 }
 
 .options:hover, .options:focus {
