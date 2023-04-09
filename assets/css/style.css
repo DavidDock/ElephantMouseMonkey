@@ -509,6 +509,9 @@ header {
         align-items: center;
         margin: 0 2rem;
     }
+    #choice-container {
+        margin: 0;
+    }
     #scores-container {
         flex-direction: row;
         margin: 0;
