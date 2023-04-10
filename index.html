@@ -22,9 +22,9 @@
 </head>
 
 <body class="jungle-add">
-    <!--Header with logo and title-->
-    <header id="header">
 
+    <!--Header with logo and title-->
+    <header id="header" class="flex">
         <span id="logo">
             <a href="index.html" aria-label="Returns you to home page">
                 <img src="assets/images/logo.webp"
@@ -36,11 +36,11 @@
     </header>
 
     <!--Opening question section with buttons-->
-    <section id="question-section">
+    <section id="question-section" class="flex">
         <h2 id="answer" class="kranky">Answer to Play</h2>
         <br>
         <h3 id="question">Can an ELEPHANT pick up a grain of rice?</h3>
-        <div id="question-buttons-container">
+        <div id="question-buttons-container" class="flex">
             <button class="options button indie" id="option1">0</button>
             <button class="options button indie" id="option2">0</button>
             <button class="options button indie" id="option3">0</button>
@@ -50,7 +50,7 @@
     </section>
 
     <!--Rules section and destination selection buttons-->
-    <section id="rules">
+    <section id="rules" class="none">
         <h2 class="kranky"> First to 5 </h2>
         <h3 class="cobalt">MOUSE scares ELEPHANT:</h3>
         <h4 class="point-rules">Mouse 1 point</h4>
@@ -62,7 +62,7 @@
         <h3 id="pick" class="kranky"> Choose your Destination
         </h3>
         <br>
-        <div id="destination-buttons">
+        <div id="destination-buttons" class="flex">
             <button class="button indie" id="savannah" aria-label="Backgound image changes to image of a savannah">Savannah</button>
             <button class="button indie" id="forest" aria-label="Backgound image changes to image of a forest">Forest </button>
             <button class="button indie" id="meadow" aria-label="Backgound image changes to image of a meadow">Meadow</button>
@@ -70,13 +70,13 @@
     </section>
 
     <!--game area-->
-    <div id="game-container">
+    <div id="game-container" class="none">
         <div id="large-screen-container">
 
             <!--choice section-->
-            <section id="choice-container">
+            <section id="choice-container" class="flex">
                 <h3 id="make-choice">Make your choice</h3>
-                <div id="image-choices">
+                <div id="image-choices" class="flex">
                     <button class="animals" id="elephant">
                         <img src="assets/images/elephant.webp" alt="Cartoon elephant, choose elephant" width="500"
                             height="500">
@@ -92,16 +92,16 @@
             </section>
 
             <!--scores and current pick section-->
-            <section id="scores-container">
-                <div id="your-score-container">
-                    <h3 class="score-p">You<br><span id="your-score">0</span></h3>
+            <section id="scores-container" class="flex">
+                <div id="your-score-container" class="flex">
+                    <h3 class="score-p">You<br><span id="your-score" class="black">0</span></h3>
                     <span class="choice-span">
                         <img id="your-image" src="assets/images/animals.webp"
                             alt="Cartoon elephant, mouse and monkey, possible game choices" width="500" height="500">
                     </span>
                 </div>
-                <div id="computer-score-container">
-                    <h3 class="score-p">Computer<br><span id="computer-score">0</span></h3>
+                <div id="computer-score-container" class="flex">
+                    <h3 class="score-p">Computer<br><span id="computer-score" class="black">0</span></h3>
                     <span class="choice-span">
                         <img id="computer-image" src="assets/images/animals.webp"
                             alt="Cartoon elephant, mouse and monkey, possible game choices" width="500" height="500">
@@ -114,7 +114,7 @@
 
     <!--results area-->
     <!--winner-->
-    <section id="results-area-winner">
+    <section id="results-area-winner" class="none">
         <h2 id="winner" class="kranky">Congratulations!</h2>
         <br>
         <h2 class="black">You won</h2>
@@ -126,7 +126,7 @@
     </section>
 
     <!--loser-->
-    <section id="results-area-loser">
+    <section id="results-area-loser" class="none">
         <h2 id="loser" class="kranky">Comiserations!</h2>
         <br>
         <h2 class="black">Sorry you lost this time.</h2>
