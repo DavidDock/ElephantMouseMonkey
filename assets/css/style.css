@@ -19,8 +19,6 @@ body, html {
     width: 100%;
     text-align: center;
     overflow-y: overlay;
-    overscroll-behavior: none;
-    position: fixed;
 }
 
 /*background image div*/
@@ -31,6 +29,7 @@ body, html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: inline-block;
+    overscroll-behavior: none;
   }
 
   /*classes for body background image change*/
