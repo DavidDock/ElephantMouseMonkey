@@ -20,13 +20,14 @@ body, html {
     text-align: center;
     overflow-y: overlay;
     overscroll-behavior: none;
+    position: fixed;
 }
 
 /*background image div*/
 #background {
     min-height: 100%;
-    min-height: webkit-fill-avaliable;
     min-width: 100%;
+    overflow-y: scroll;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
