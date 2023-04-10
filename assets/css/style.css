@@ -16,11 +16,9 @@ to stop mobile overscroll effect overflow-behavour: none :learnt from https://ww
 */
 body, html {
     height: 100%;
-    /*fix safari bachground bug*/
-    min-height: webkit-fill-avaliable;
     width: 100%;
     text-align: center;
-    overflow-y: overlay;
+    scrollbar-gutter: auto;
     overscroll-behavior: none;
 }
 
