@@ -85,7 +85,7 @@ const rules = document.getElementById("rules");
 const forest = document.getElementById("forest");
 const savannah = document.getElementById("savannah");
 const meadow = document.getElementById("meadow");
-const background = document.getElementById("background");
+const background = document.getElementsByTagName("body")[0];
 const gameContainer = document.getElementById("game-container");
 const yourImage = document.getElementById("your-image");
 const computerImage = document.getElementById("computer-image");
@@ -164,7 +164,6 @@ for (let animal of animals) {
 savannah.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("savannah-add");
-    background.ariaLabel = 'Background cartoon image of a savannah';
     background.classList.remove("meadow-add");
     background.classList.remove("forest-add");
     rules.style.display = "none";
@@ -174,7 +173,6 @@ savannah.addEventListener('click', function() {
 forest.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("forest-add");
-    background.ariaLabel = 'Background cartoon image of a forest';
     background.classList.remove("savannah-add");
     background.classList.remove("meadow-add");
     rules.style.display = "none";
@@ -184,7 +182,6 @@ forest.addEventListener('click', function() {
   meadow.addEventListener('click', function() {
     background.classList.remove("jungle-add");
     background.classList.add("meadow-add");
-    background.ariaLabel = 'Background cartoon image of a meadow';
     background.classList.remove("savannah-add");
     background.classList.remove("forest-add");
     rules.style.display = "none";
