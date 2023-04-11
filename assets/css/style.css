@@ -100,7 +100,7 @@ p {
 /*header with logo and title*/
 header {
     background-color: rgba(0, 70, 140, 0.8);
-    max-width: 85%;
+    max-width: 90%;
     margin: 2rem auto;
     flex-direction: column;
     width: fit-content;
@@ -115,7 +115,6 @@ header {
 #title {
     padding: 0.5rem 1rem 1rem;
     color: #66ff00;
-    font-size: 1.1rem;
 }
 
 /*question section*/
