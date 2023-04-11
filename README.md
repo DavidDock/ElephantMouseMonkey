@@ -2,8 +2,9 @@
 
 This is a variation of 'Rock' 'Paper' 'Scissor' but with additional features designed to keep children entertained.
 
-You choose your game 'destination' of either the Forest, Savannah or Meadow to play. You then pick 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.
-
+You have a fun question continue to the game, then you can choose your game 'destination' of either the Forest, Savannah or Meadow to play.  
+ 
+You then pick 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.
 Everyone knows that:
 'Mice scare Elephants'
 'Monkeys catch Mice' and
@@ -49,11 +50,12 @@ Because the game is to be used by children it is important to ensure the users j
 * As the site owner I want to entertain the user.
 * As the site owner I would like to provide a simple game that all can play on a multitude of device types.
 * As the site owner I would like to encourage the user to play more than once and return to the site.
+* As a site owner I want to teach the user new facts whilst playing.
 
 #### How will the goals be acheived
 
 * Engaging UX that to grab childrens attention and be fun. Bright colors, fun typography and cartoon images all matching the animal theme of the game.
-* A fun and informative question to start the game.
+* A fun and informative question to start the game, teaching the user a fact about the subject matter. There will be a number of different questions to keep the returning player enertained.
 * Options to change the background image will keep the user entertained and encourage them to play again.
 * Large, intuitive buttons so the navigation is straight forward.
 * A set amount of rounds of the game to play so a winner is determained and informed by a results screen.
@@ -96,31 +98,12 @@ The images chosen are to enhance the UX for the target audience. The images are 
 
 Balsamiq was used to design my wireframes.
 
-Because the game requires a specific layout the wireframes remain the same across all devices.
-The site is responsive and does ajust image and font size depending on device size but the layout remains the same.
+The wireframe layout remains the same for mobile and tablet devices.  
 
+The site is responsive and does adjust image and font size depending on device size.  
 
-### Landing Page
+The layout changes for the rules page and games page when devices reach 1024 px and above.  
 
-
-![Landing Page](assets/media/wireframes/landing.png)
-
-
-### Rules and destination choice section
-
-
-![Rules and destination choice section](assets/media/wireframes/rules.png)
-
-
-### Main game
-
-
-![Main Game](assets/media/wireframes/game.png)
-
-
-### Results section
-
-
-![Results section](assets/media/wireframes/results.png)
+![Wireframes](assets/media/wireframes.png)
 
 ## Features

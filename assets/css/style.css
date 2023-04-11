@@ -11,7 +11,7 @@
 
 /*
 body and html
-to stop width increasing and backgound jumping when scrollbar included add overflow-y: overlay :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome
+to stop width increasing and backgound jumping when scrollbar included add overflow-y: scroll :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome
 */
 body {
     background-size: cover;
