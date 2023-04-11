@@ -2,13 +2,15 @@
 
 This is a variation of 'Rock' 'Paper' 'Scissor' but with additional features designed to keep children entertained.
 
-You have a fun question continue to the game, then you can choose your game 'destination' of either the Forest, Savannah or Meadow to play.  
+With have an informative question and a choice of game 'destination' you proceed to the game.
  
-You then pick 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.
-Everyone knows that:
-'Mice scare Elephants'
-'Monkeys catch Mice' and
-'Elephants squash Monkeys!!'
+You can choose an 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.  
+
+
+Everyone knows that:  
+'Mice scare Elephants'  
+'Monkeys catch Mice' and  
+'Elephants squash Monkeys!'
 
 
 
