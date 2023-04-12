@@ -1,8 +1,12 @@
-# Elephant Mouse Monkey
+# Elephant Mouse Monkey  
 
-This is a variation of 'Rock' 'Paper' 'Scissor' but with additional features designed to keep children entertained.
+![Website displayed on various devices](assets/media/responsive.png)  
 
-With have an informative question and a choice of game 'destination' you proceed to the game.
+Visit the deployed site: [Elephant Mouse Monkey](https://daviddock.github.io/ElephantMouseMonkey/)
+
+This is a variation of 'Rock' 'Paper' 'Scissor' with additional features designed to keep children entertained.
+
+There is an informative multiple choice question to start with  and a choice of background image for the game area 'destination'.
  
 You can choose an 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.  
 
@@ -27,6 +31,18 @@ Everyone knows that:
   * [Wireframes](#wireframes)
 
 * [Features](#features)
+  * [Languages Used](#languages-used)
+  * [Logo and Title](#logo-and-title)
+  * [Question Area](#question-area)
+  * [Rules Area](#rules-area)
+  * [Game Area](#game-area)
+  * [Winner Area](#winner-area)
+  * [Loser Area](#loser-area)
+  * [404 Page](#404-page)
+
+* [Deployment](#deployment)
+* [Testing](#testing)
+* [Credits](#credits)
 
 
 ## User Experience
@@ -74,7 +90,7 @@ Because this game is designed to be enjoyable for children I opted to go for a r
 
 To meet WCAG 2.0 criteria, the color scheme was then passed to [eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23ffffff%0D%0A%23000000%0D%0A%2366ff00%0D%0A%2308e8de%0D%0A%23fc74fd%0D%0A%23803790%0D%0A%23fd0e35%0D%0A%2300468c%0D%0A%23013220%0D%0A%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to generate an accessibility table, I then only used accessible text colors to ensure easy reading.
 
-![Color-grid](assets/media/color-grid.PNG)
+![Color-grid](assets/media/color-grid.png)
 
 ### Typography
 
@@ -84,11 +100,11 @@ Again because this is a game with children in mind I used fun, kiddy fonts desig
 
 For The headings I used Kranky, its a fun-filled font with is very stylised ideal for headings:
 
-![Kranky](assets/media/kranky.PNG)
+![Kranky](assets/media/kranky.png)
 
 For the more dense parts of text, like the initial question and rules I used Indie Flower, again designed to be fun:
 
-![Indie Flower](assets/media/indie-flower.PNG)
+![Indie Flower](assets/media/indie-flower.png)
 
 
 ### Images
@@ -108,4 +124,47 @@ The layout changes for the rules page and games page when devices reach 1024 px 
 
 ![Wireframes](assets/media/wireframes.png)
 
-## Features
+## Features  
+
+### Languages Used  
+
+HTML, CSS, JavaScript
+
+### Logo and Title  
+
+![Logo and Title](assets/media/logo.png)  
+
+### Question Area  
+
+![Question Area](assets/media/question.png)  
+
+![Incorrect Answer](assets/media/incorrect.png)
+
+### Rules Area  
+
+![Rules Area](assets/media/rules.png)  
+
+### Game Area  
+
+![Game Area](assets/media/game-area.png)  
+
+### Winner Area  
+
+![Winner Area](assets/media/winner-area.png)  
+
+### Loser Area  
+
+![Loser Area](assets/media/loser-area.png)  
+
+### 404 Page  
+
+![404 Message](assets/media/error-page.png)
+
+## Deployment
+
+## Testing
+
+Please refer to [TESTING.MD](TESTING.md)  
+
+## Credits
+
