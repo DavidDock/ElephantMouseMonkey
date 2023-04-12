@@ -135,24 +135,6 @@ function questionCheck() {
   }
 }
 
-//get each animal choice from array
-//add event listener for each animal
-//determine user choice from click
-//display choice as image in html
-//run functions getComputerChoice
-//run function for getResult
-//run function to check if game is over
-for (let animal of animals) {
-  animal.addEventListener("click", function () {
-    userChoice = this.getAttribute("id");
-    yourImage.src = `assets/images/${userChoice}.webp`;
-    yourImage.alt = `Your choice: cartoon ${userChoice}`;
-    getComputerChoice();
-    getResult();
-    gameOver();
-  });
-}
-
 //event listeners for destination choice buttons
 //runs functions to move to relevant game area and hide others
 savannah.addEventListener('click', function () {
@@ -181,6 +163,27 @@ meadow.addEventListener('click', function () {
   rules.style.display = "none";
   gameContainer.style.display = "block";
 });
+
+//get each animal choice from array
+//add event listener for each animal and run game
+for (let animal of animals) {
+  animal.addEventListener("click", gameRun);
+}
+
+//determine user choice from click
+//display choice as image in html
+//run functions getComputerChoice
+//run function for getResult
+//run function to check if game is over
+function gameRun() {
+  userChoice = this.getAttribute("id");
+  yourImage.src = `assets/images/${userChoice}.webp`;
+  yourImage.alt = `Your choice: cartoon ${userChoice}`;
+  getComputerChoice();
+  getResult();
+  gameOver();
+}
+
 
 //function to pick random number for computer
 //asign the computer a choice
