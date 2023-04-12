@@ -113,26 +113,27 @@ option2.innerText = currentQuestion.b;
 option3.innerText = currentQuestion.c;
 
 //add event listener for each user answer
-//determine if correct
-//execute relevent actions if correct or incorrect
+//run questionCheck function
 for (let option of options) {
-  option.addEventListener("click", function () {
-    const picked = this.innerHTML;
-    if (picked === currentQuestion.answer) {
-
-      questionSection.style.display = "none";
-      rules.style.display = "flex";
-
-    } else {
-      this.style.display = "none";
-      questionSection.style.backgroundColor = "rgba(253,14,53, 0.8)";
-      wrong.style.display = "block";
-      answer.style.display = "none";
-    }
-  });
+  option.addEventListener("click", questionCheck);
 }
 
+//determine if answer is correct
+//execute relevent actions if correct or incorrect
+function questionCheck() {
+  const picked = this.innerHTML;
+  if (picked === currentQuestion.answer) {
 
+    questionSection.style.display = "none";
+    rules.style.display = "flex";
+
+  } else {
+    this.style.display = "none";
+    questionSection.style.backgroundColor = "rgba(253,14,53, 0.8)";
+    wrong.style.display = "block";
+    answer.style.display = "none";
+  }
+}
 
 //get each animal choice from array
 //add event listener for each animal
