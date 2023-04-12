@@ -1,6 +1,5 @@
 //question list
-const questions = [
-  {
+const questions = [{
     question: "Which animal can hear out of its feet?",
     a: "Elephant",
     b: "Mouse",
@@ -115,31 +114,25 @@ option3.innerText = currentQuestion.c;
 
 //add event listener for each user answer
 //determine if correct
-//execute relevent function
+//execute relevent actions if correct or incorrect
 for (let option of options) {
-  option.addEventListener("click", function() {
+  option.addEventListener("click", function () {
     const picked = this.innerHTML;
     if (picked === currentQuestion.answer) {
-      correct();
+
+      questionSection.style.display = "none";
+      rules.style.display = "flex";
+
     } else {
-      this.style.display= "none";
-      incorrect();
+      this.style.display = "none";
+      questionSection.style.backgroundColor = "rgba(253,14,53, 0.8)";
+      wrong.style.display = "block";
+      answer.style.display = "none";
     }
   });
-  }
-
-//function inncorect to inform user answer is wrong and choose again
-function incorrect() {
-  questionSection.style.backgroundColor= "rgba(253,14,53, 0.8)";
-  wrong.style.display= "block";
-  answer.style.display= "none"; 
 }
 
-//corect answer function - takes user to rules area
-function correct() {
-  questionSection.style.display = "none";
-  rules.style.display = "flex"; 
-}
+
 
 //get each animal choice from array
 //add event listener for each animal
@@ -149,7 +142,7 @@ function correct() {
 //run function for getResult
 //run function to check if game is over
 for (let animal of animals) {
-  animal.addEventListener("click", function() {
+  animal.addEventListener("click", function () {
     userChoice = this.getAttribute("id");
     yourImage.src = `assets/images/${userChoice}.webp`;
     yourImage.alt = `Your choice: cartoon ${userChoice}`;
@@ -157,36 +150,36 @@ for (let animal of animals) {
     getResult();
     gameOver();
   });
-  }
+}
 
 //event listeners for destination choice buttons
 //runs functions to move to relevant game area and hide others
-savannah.addEventListener('click', function() {
-    background.classList.remove("jungle-add");
-    background.classList.add("savannah-add");
-    background.classList.remove("meadow-add");
-    background.classList.remove("forest-add");
-    rules.style.display = "none";
-    gameContainer.style.display= "block";
-  });
+savannah.addEventListener('click', function () {
+  background.classList.remove("jungle-add");
+  background.classList.add("savannah-add");
+  background.classList.remove("meadow-add");
+  background.classList.remove("forest-add");
+  rules.style.display = "none";
+  gameContainer.style.display = "block";
+});
 
-forest.addEventListener('click', function() {
-    background.classList.remove("jungle-add");
-    background.classList.add("forest-add");
-    background.classList.remove("savannah-add");
-    background.classList.remove("meadow-add");
-    rules.style.display = "none";
-    gameContainer.style.display= "block";
-  });
+forest.addEventListener('click', function () {
+  background.classList.remove("jungle-add");
+  background.classList.add("forest-add");
+  background.classList.remove("savannah-add");
+  background.classList.remove("meadow-add");
+  rules.style.display = "none";
+  gameContainer.style.display = "block";
+});
 
-  meadow.addEventListener('click', function() {
-    background.classList.remove("jungle-add");
-    background.classList.add("meadow-add");
-    background.classList.remove("savannah-add");
-    background.classList.remove("forest-add");
-    rules.style.display = "none";
-    gameContainer.style.display= "block";
-  });
+meadow.addEventListener('click', function () {
+  background.classList.remove("jungle-add");
+  background.classList.add("meadow-add");
+  background.classList.remove("savannah-add");
+  background.classList.remove("forest-add");
+  rules.style.display = "none";
+  gameContainer.style.display = "block";
+});
 
 //function to pick random number for computer
 //asign the computer a choice
@@ -195,13 +188,13 @@ forest.addEventListener('click', function() {
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
-     computerChoice = 'elephant';
+    computerChoice = 'elephant';
   }
   if (randomNumber === 1) {
-     computerChoice = 'mouse';
+    computerChoice = 'mouse';
   }
   if (randomNumber === 2) {
-     computerChoice = 'monkey';
+    computerChoice = 'monkey';
   }
   computerImage.src = `assets/images/${computerChoice}.webp`;
   computerImage.alt = `Computers choice: cartoon ${computerChoice}`;
@@ -211,39 +204,39 @@ function getComputerChoice() {
 function getResult() {
   if (computerChoice === userChoice) {
     draw();
-    result.innerHTML= "ITS A DRAW";
- }
- if (computerChoice === 'elephant' && userChoice === 'mouse') {
+    result.innerHTML = "ITS A DRAW";
+  }
+  if (computerChoice === 'elephant' && userChoice === 'mouse') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Mouse scares their Elephant" ;
- }
- if (computerChoice === 'elephant' && userChoice === 'monkey') {
+    result.innerHTML = "YOU WIN <br> your Mouse scares their Elephant";
+  }
+  if (computerChoice === 'elephant' && userChoice === 'monkey') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Elephant squashes your Monkey";
- }
- if (computerChoice === 'mouse' && userChoice === 'monkey') {
+    result.innerHTML = "YOU LOSE <br> their Elephant squashes your Monkey";
+  }
+  if (computerChoice === 'mouse' && userChoice === 'monkey') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Monkey catches their Mouse";
- }
- if (computerChoice === 'mouse' && userChoice === 'elephant') {
+    result.innerHTML = "YOU WIN <br> your Monkey catches their Mouse";
+  }
+  if (computerChoice === 'mouse' && userChoice === 'elephant') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Mouse scares your Elephant";
- }
- if (computerChoice === 'monkey' && userChoice === 'elephant') {
+    result.innerHTML = "YOU LOSE <br> their Mouse scares your Elephant";
+  }
+  if (computerChoice === 'monkey' && userChoice === 'elephant') {
     youWin();
-    result.innerHTML= "YOU WIN <br> your Elephant squashes their Monkey";
- }
- if (computerChoice === 'monkey' && userChoice === 'mouse') {
+    result.innerHTML = "YOU WIN <br> your Elephant squashes their Monkey";
+  }
+  if (computerChoice === 'monkey' && userChoice === 'mouse') {
     computerWins();
-    result.innerHTML= "YOU LOSE <br> their Monkey catches your Mouse";
- }
+    result.innerHTML = "YOU LOSE <br> their Monkey catches your Mouse";
+  }
 }
 
 //draw function
 function draw() {
   yourImage.classList.remove("win", "lose");
   computerImage.classList.remove("win", "lose");
-  result.style.opacity= "1";
+  result.style.opacity = "1";
 }
 
 //function if user wins
@@ -253,7 +246,7 @@ function youWin() {
   yourImage.classList.remove("lose");
   yourImage.classList.add("win");
   computerImage.classList.add("lose");
-  result.style.opacity= "1";
+  result.style.opacity = "1";
 }
 
 //function if computer wins
@@ -263,18 +256,18 @@ function computerWins() {
   computerImage.classList.remove("lose");
   computerImage.classList.add("win");
   yourImage.classList.add("lose");
-  result.style.opacity= "1";
+  result.style.opacity = "1";
 }
 
 //function to check if game is over game send to relevant results area
 function gameOver() {
   if (userScore === 5) {
-    gameContainer.style.display= "none";
-    resultsAreaWinner.style.display= "flex";
+    gameContainer.style.display = "none";
+    resultsAreaWinner.style.display = "flex";
   }
   if (computerScore === 5) {
-    gameContainer.style.display= "none";
-    resultsAreaLoser.style.display= "flex";
+    gameContainer.style.display = "none";
+    resultsAreaLoser.style.display = "flex";
   }
 }
 
@@ -282,7 +275,7 @@ function gameOver() {
 //event listener for button click
 //reloads window
 for (let reset of resets) {
-  reset.addEventListener("click", function() {
-  location.reload();
+  reset.addEventListener("click", function () {
+    location.reload();
   });
-}  
+}
