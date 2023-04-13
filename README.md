@@ -32,6 +32,7 @@ Everyone knows that:
 
 * [Features](#features)
   * [Languages Used](#languages-used)
+  * [Favicon](#favicon)
   * [Logo and Title](#logo-and-title)
   * [Question Area](#question-area)
   * [Rules Area](#rules-area)
@@ -39,6 +40,7 @@ Everyone knows that:
   * [Winner Area](#winner-area)
   * [Loser Area](#loser-area)
   * [404 Page](#404-page)
+  * [Accessibility](#accessibility)
   * [Future Implementations](#future-implementations)
 
 * [Deployment](#deployment)
@@ -129,7 +131,11 @@ The websites layout changes for the rules page and games page when devices reach
 
 ### Languages Used  
 
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript  
+
+### Favicon
+
+![Favicon](assets/media/favicon-feature.png)
 
 ### Logo and Title  
 
@@ -160,6 +166,8 @@ HTML, CSS, JavaScript
 ### 404 Page  
 
 ![404 Message](assets/media/error-page.png)  
+
+### Accessibility
 
 ### Future Implementations
 

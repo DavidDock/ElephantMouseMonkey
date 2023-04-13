@@ -5,6 +5,7 @@
 * [JavaScript Validator](#javascript-validator)
 * [Lighthouse](#lighthouse)
 * [Wave](#wave)
+* [Device Responsiveness](#device-responsiveness)
 * [Manual Testing](#manual-testing)
 
 ## HTML Validator  
@@ -34,7 +35,12 @@
 
 ![Wave Testing](assets/media/testing/wave.png)  
 
-![Wave Testing 404 Page](assets/media/testing/wave-404.png) 
+![Wave Testing 404 Page](assets/media/testing/wave-404.png)  
+
+## Device Responsiveness
+
+
+The website used was [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700).  
 
 ## Manual Testing  
 
