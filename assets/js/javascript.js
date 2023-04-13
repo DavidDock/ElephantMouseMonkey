@@ -105,8 +105,7 @@ let computerScore = 0;
 
 //get random question from question list
 //display in html
-const randomNumber = Math.floor(Math.random() * 10);
-currentQuestion = questions[randomNumber];
+currentQuestion = questions[Math.floor(Math.random() * questions.length)];
 question.innerText = currentQuestion.question;
 option1.innerText = currentQuestion.a;
 option2.innerText = currentQuestion.b;
@@ -123,10 +122,8 @@ for (let option of options) {
 function questionCheck() {
   const picked = this.innerHTML;
   if (picked === currentQuestion.answer) {
-
     questionSection.style.display = "none";
     rules.style.display = "flex";
-
   } else {
     this.style.display = "none";
     questionSection.style.backgroundColor = "rgba(253,14,53, 0.8)";
