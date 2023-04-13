@@ -135,19 +135,28 @@ HTML, CSS, JavaScript
 
 ### Favicon
 
+The favicon for this website was created at [https://favicon.io/](https://favicon.io/). It is an image taken from the websites logo.
+
 ![Favicon](assets/media/favicon-feature.png)
 
 ### Logo and Title  
 
+This runs at the top of the page at all times. It comprises of a large title and Logo in keeping with the websites bright and fun UX. The Logo also acts as a link to refresh the website back to the random question area.
+
 ![Logo and Title](assets/media/logo.png)  
 
 ### Question Area  
+
+Displaying a multiple choice question about the three animals. This question is randomly generated each time you play and has three options. You have to select the correct answer to get to the rules area and start the game. If you select the wrong answer that option will disapear and you'll be asked to guess again until you get it right.  
+With the area turning red if you are incorrect, large buttons, hover and focus effects this makes navigation and gameplay straight forward.
 
 ![Question Area](assets/media/question.png)  
 
 ![Incorrect Answer](assets/media/incorrect.png)
 
 ### Rules Area  
+
+This tells you the rules of the upcoming game then allows you to pick a game 'destination'. The destinations are backgound images that display during the main game matching the websites theme.
 
 ![Rules Area](assets/media/rules.png)  
 
@@ -169,7 +178,13 @@ HTML, CSS, JavaScript
 
 ### Accessibility
 
-### Future Implementations
+### Future Implementations  
+
+In the future I would like to:  
+
+* Add more random questions to encourage users to return.
+* Add a bonus round with the questions, if you loose you get a point back by answering a question correctly.
+* Give more style options to the user with more background images and also add background sounds.
 
 ## Deployment
 
