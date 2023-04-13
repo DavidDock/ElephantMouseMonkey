@@ -6,7 +6,7 @@ Visit the deployed site: [Elephant Mouse Monkey](https://daviddock.github.io/Ele
 
 This is a variation of 'Rock' 'Paper' 'Scissor' with additional features designed to keep children entertained.
 
-There is an informative multiple choice question to start with  and a choice of background image for the game area 'destination'.
+There is a multiple choice question to start with and a choice of background for the game area.
  
 You can choose an 'Elephant' 'Mouse' or 'Monkey' to battle the computer to see who comes out on top.  
 
@@ -39,6 +39,7 @@ Everyone knows that:
   * [Winner Area](#winner-area)
   * [Loser Area](#loser-area)
   * [404 Page](#404-page)
+  * [Future Implementations](#future-implementations)
 
 * [Deployment](#deployment)
 * [Testing](#testing)
@@ -86,7 +87,7 @@ Because the game is to be used by children it is important to ensure the users j
 ### Colour Scheme
 
 
-Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme. Some of the research I undertook on UX for children can be found on[Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
+Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme. Some of the research I undertook on UX for children can be found on [Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
 
 To meet WCAG 2.0 criteria, the color scheme was then passed to [eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23ffffff%0D%0A%23000000%0D%0A%2366ff00%0D%0A%2308e8de%0D%0A%23fc74fd%0D%0A%23803790%0D%0A%23fd0e35%0D%0A%2300468c%0D%0A%23013220%0D%0A%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to generate an accessibility table, I then only used accessible text colors to ensure easy reading.
 
@@ -116,11 +117,11 @@ The images chosen are to enhance the UX for the target audience. The images are 
 
 Balsamiq was used to design my wireframes.
 
-The wireframe layout remains the same for mobile and tablet devices.  
+The websites layout remains the same for mobile and tablet devices.  
 
-The site is responsive and does adjust image and font size depending on device size.  
+The site is responsive and adjusts image and font size depending on device size.  
 
-The layout changes for the rules page and games page when devices reach 1024 px and above.  
+The websites layout changes for the rules page and games page when devices reach 1024 px and above.  
 
 ![Wireframes](assets/media/wireframes.png)
 
@@ -158,7 +159,9 @@ HTML, CSS, JavaScript
 
 ### 404 Page  
 
-![404 Message](assets/media/error-page.png)
+![404 Message](assets/media/error-page.png)  
+
+### Future Implementations
 
 ## Deployment
 
