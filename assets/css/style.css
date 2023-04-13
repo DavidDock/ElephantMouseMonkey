@@ -9,10 +9,8 @@
     border: 0;
 }
 
-/*
-body and html
-to stop width increasing and backgound jumping when scrollbar included add overflow-y: scroll :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome
-*/
+/*body style*/
+/*to stop width increasing and backgound jumping when scrollbar included add overflow-y: scroll :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome*/
 body {
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,35 +19,37 @@ body {
     overflow-y: scroll;
 }
 
-  /*classes for body background image change*/
+/*classes for body background image change*/
 .jungle-add {
     background-image: url('../images/jungle.webp');
-} 
+}
 
 .savannah-add {
     background-image: url('../images/savannah.webp');
-  }
+}
 
 .forest-add {
     background-image: url('../images/forest.webp');
-}  
+}
 
 .meadow-add {
     background-image: url('../images/meadow.webp');
 }
 
- /*headings and paragraph style defaults*/
-h2, h3, h4 {
+/*headings and paragraph style defaults*/
+h2,
+h3,
+h4 {
     font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     color: white;
     padding: 0.2rem;
-  }
+}
 
 p {
     font-size: 1.2rem;
     font-weight: 600;
     padding: 0.2rem;
-  }
+}
 
 /*button and image style defaults*/
 .button {
@@ -60,9 +60,9 @@ p {
     padding: 0.25rem 0.75rem;
     font-size: 1.5rem;
     margin: 0.5rem;
-  }  
+}
 
-  img {
+img {
     width: 100%;
     height: auto;
     padding: 0.5rem;
@@ -147,7 +147,8 @@ header {
     color: #000000;
 }
 
-.options:hover, .options:focus {
+.options:hover,
+.options:focus {
     cursor: pointer;
     color: black;
     background-color: #66ff00;
@@ -155,7 +156,7 @@ header {
 
 /*Rules section and destination selection buttons*/
 #rules {
-    background-color: rgba(128,55,144, 0.9);
+    background-color: rgba(128, 55, 144, 0.9);
     margin: 10% auto 2%;
     width: fit-content;
     max-width: 80%;
@@ -192,33 +193,36 @@ header {
     color: black;
 }
 
-#savannah:hover, #savannah:focus {
+#savannah:hover,
+#savannah:focus {
     cursor: pointer;
     background-color: black;
     color: #ffa500;
 }
 
-#forest:hover, #forest:focus {
+#forest:hover,
+#forest:focus {
     cursor: pointer;
     background-color: white;
     color: #013220;
 }
 
-#meadow:hover, #meadow:focus {
+#meadow:hover,
+#meadow:focus {
     cursor: pointer;
     background-color: black;
     color: #ffee00;
 }
- 
+
 /*game area*/
 /*animal choice area*/
-#game-container{
+#game-container {
     margin-bottom: 2%;
 }
 
 #choice-container {
     width: 80%;
-    background-color: rgba(102,255,0, 0.7);
+    background-color: rgba(102, 255, 0, 0.7);
     margin: 0 auto 2rem;
     border-radius: 25px;
     flex-direction: column;
@@ -226,7 +230,7 @@ header {
 
 #make-choice {
     padding: 2%;
-    color:rgba(0, 70, 140, 1);
+    color: rgba(0, 70, 140, 1);
     font-family: 'Indie Flower', arial, sans-serif, Helvetica;
 }
 
@@ -242,7 +246,8 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.animals:hover, .animals:focus {
+.animals:hover,
+.animals:focus {
     cursor: pointer;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, 0.6);
@@ -260,8 +265,9 @@ header {
     gap: 1.5rem;
 }
 
-#your-score-container, #computer-score-container {
-    background-color: rgba(255,255,255,0.6);
+#your-score-container,
+#computer-score-container {
+    background-color: rgba(255, 255, 255, 0.6);
     width: 40%;
     margin: 0 auto;
     border-radius: 25px;
@@ -269,12 +275,13 @@ header {
 }
 
 .score-p {
-    color:#00468c;
+    color: #00468c;
     font-family: 'Indie Flower', arial, sans-serif, Helvetica;
     text-align: center;
 }
 
-#your-score, #computer-score {
+#your-score,
+#computer-score {
     font-size: 1.75rem;
 }
 
@@ -283,7 +290,7 @@ header {
 }
 
 #result {
-    background-color: rgba(128,55,144, 0.8);
+    background-color: rgba(128, 55, 144, 0.8);
     width: fit-content;
     margin: 5% auto 0;
     font-size: 1.2rem;
@@ -295,37 +302,39 @@ header {
 
 /*glowing border learnt from https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html*/
 @keyframes glowing {
-    0%  {
+    0% {
         background-color: #be03fd;
         box-shadow: 0 0 20px #be03fd;
-;    } 
-    50%  {
-        background-color: rgba(128,55,144, 1);
-        box-shadow: 0 0 20px rgba(128,55,144, 1);
-    }  
-    100%  {
+    }
+
+    50% {
+        background-color: rgba(128, 55, 144, 1);
+        box-shadow: 0 0 20px rgba(128, 55, 144, 1);
+    }
+
+    100% {
         background-color: #be03fd;
         box-shadow: 0 0 20px #be03fd;
-    }  
+    }
 }
 
 /*Winner and loser classes*/
 .win {
     opacity: 1;
-    background-color: rgba(102,255,0, 0.8);
+    background-color: rgba(102, 255, 0, 0.8);
     border-radius: 25px;
 }
 
 .lose {
     opacity: 0.7;
-    background-color: rgba(253,14,53, 0.8);
+    background-color: rgba(253, 14, 53, 0.8);
     border-radius: 25px;
 }
 
 /*Results area*/
 /*winner area*/
 #results-area-winner {
-    background-color: rgba(252,116,253, 0.9);
+    background-color: rgba(252, 116, 253, 0.9);
     background-image: url(../images/celebrate.webp);
     background-size: cover;
     margin: 10% auto 2%;
@@ -346,7 +355,8 @@ header {
     color: #000000;
 }
 
-#play-again-winner:hover, #play-again-winner:focus {
+#play-again-winner:hover,
+#play-again-winner:focus {
     cursor: pointer;
     background-color: #803790;
     color: #66ff00;
@@ -354,7 +364,7 @@ header {
 
 /*loser area*/
 #results-area-loser {
-    background-color: rgba(253,14,53, 0.8);
+    background-color: rgba(253, 14, 53, 0.8);
     margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
@@ -374,16 +384,16 @@ header {
     color: #66ff00;
 }
 
-#play-again-loser:hover, #play-again-loser:focus {
+#play-again-loser:hover,
+#play-again-loser:focus {
     cursor: pointer;
     background-color: #66ff00;
     color: #000000;
 }
 
 /*404 page*/
-
 #error-container {
-    background-color: #fc74fd ;
+    background-color: #fc74fd;
     margin: 10% auto 2%;
     width: fit-content;
     max-width: 75%;
@@ -400,76 +410,109 @@ header {
     background-color: #ffffff;
 }
 
-#error-button:hover, #error-button:focus {
+#error-button:hover,
+#error-button:focus {
     background-color: #000000;
 }
 
 /*media query min 600px*/
 @media (min-width: 600px) {
-    h2, h3 {
+
+    h2,
+    h3 {
         font-size: 2rem;
     }
+
     p {
         font-size: 1.5rem;
     }
-    #title, .score-p {
+
+    #title,
+    .score-p {
         font-size: 1.75rem;
     }
+
     .point-rules {
         font-size: 1.2rem;
     }
+
     #destination-buttons {
         display: flex;
         flex-direction: row;
     }
-    #make-choice, #result {
+
+    #make-choice,
+    #result {
         font-size: 1.5rem;
-    }  
-    #your-score, #computer-score {
+    }
+
+    #your-score,
+    #computer-score {
         font-size: 2.25rem;
     }
 }
 
 /*media query min 1024px*/
-@media (min-width: 1024px){
-    h2, h3, #title {
+@media (min-width: 1024px) {
+
+    h2,
+    h3,
+    #title {
         font-size: 2.5rem;
     }
-    #result, .score-p, #make-choice, p, .button {
+
+    #result,
+    .score-p,
+    #make-choice,
+    p,
+    .button {
         font-size: 2rem;
     }
+
     .button {
         padding: 0.75rem 1rem;
     }
+
     #question-section {
         margin-top: 2rem;
     }
+
     #rules {
         margin: 2rem auto 2%;
     }
+
     .point-rules {
         font-size: 1.75rem;
     }
-    #large-screen-container{
+
+    #large-screen-container {
         display: flex;
         align-items: center;
         margin: 0 2rem;
     }
-    #choice-container, #computer-score-container {
+
+    #choice-container,
+    #computer-score-container {
         margin: 0;
     }
+
     #scores-container {
         flex-direction: row;
         margin: 0;
         gap: 0;
     }
-    #your-score, #computer-score {
+
+    #your-score,
+    #computer-score {
         font-size: 2.5rem;
     }
-    #result{
+
+    #result {
         margin: 2rem auto;
     }
-    #results-area-winner, #results-area-loser  {
+
+    #results-area-winner,
+    #results-area-loser {
         margin: 5% auto 2%;
     }
 }
