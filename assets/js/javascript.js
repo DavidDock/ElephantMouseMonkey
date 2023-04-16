@@ -158,8 +158,6 @@ function questionCheck() {
 savannah.addEventListener('click', function () {
   background.classList.remove("jungle-add");
   background.classList.add("savannah-add");
-  background.classList.remove("meadow-add");
-  background.classList.remove("forest-add");
   rules.style.display = "none";
   gameContainer.style.display = "block";
 });
@@ -167,8 +165,6 @@ savannah.addEventListener('click', function () {
 forest.addEventListener('click', function () {
   background.classList.remove("jungle-add");
   background.classList.add("forest-add");
-  background.classList.remove("savannah-add");
-  background.classList.remove("meadow-add");
   rules.style.display = "none";
   gameContainer.style.display = "block";
 });
@@ -176,8 +172,6 @@ forest.addEventListener('click', function () {
 meadow.addEventListener('click', function () {
   background.classList.remove("jungle-add");
   background.classList.add("meadow-add");
-  background.classList.remove("savannah-add");
-  background.classList.remove("forest-add");
   rules.style.display = "none";
   gameContainer.style.display = "block";
 });
@@ -206,7 +200,6 @@ function gameRun() {
 //function to pick random number for computer
 //asign the computer a choice
 //display comuter choice image in html
-//function inncorect to inform user answer is wrong
 function getComputerChoice() {
   const randomNumber = Math.floor(Math.random() * 3);
   if (randomNumber === 0) {
