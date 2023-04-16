@@ -69,6 +69,27 @@ const questions = [{
     c: "Elephant",
     answer: "Elephant",
   },
+  {
+    question: "Which continent do Monkeys not live in?",
+    a: "Europe",
+    b: "North America",
+    c: "Australia",
+    answer: "Australia",
+  },
+  {
+    question: "How much water can an Elephant store in it's trunk?",
+    a: "3 Litres",
+    b: "5.5 Litres",
+    c: "7 Litres",
+    answer: "5.5 Litres",
+  },
+  {
+    question: "How many whiskers does a Mouse have?",
+    a: "12",
+    b: "24",
+    c: "30",
+    answer: "24",
+  },
 ];
 
 //all const needed
