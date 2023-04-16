@@ -102,3 +102,14 @@ Responsiveness was tested throughout the development by using dev tools on every
 
 ## Manual Testing  
 
+This website has been tested on mobile devices, tablets and laptop and as mentioned in the responsiveness section above It has been thoroughly tested with dev tools and [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700).  
+I have tested the site on Chrome, Safari and Microsoft Edge browsers and it works well on all.  
+
+I undertook the following testing for the website:
+
+### Question Area  
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- |  
+| Logo links to the question area | The page refreshes | Clicked the logo several times | Refreshes page | Pass |
+
