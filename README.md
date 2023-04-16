@@ -228,5 +228,27 @@ To Clone the repository:
 
 Please refer to [TESTING.MD](TESTING.md)  
 
-## Credits
+## Credits  
+
+### Learning  
+
+The code used for this project was taught to me by code insitute. In particular this project focused on javaScript. Code Insitutes project run through 'love math' helped me greatly with the concepts needed in my project including getting a random number and using event listeners to find out what particular button was pressed.
+
+
+### New learning
+
+To get my head around the concepts needed for this game I also watched [3 ways to code Rock Paper Scissors in JavaScript](https://www.youtube.com/watch?v=RwFeg0cEZvQ) and [How To Code Rock Paper Scissors In JavaScript](https://www.youtube.com/watch?v=1yS-JV4fWqY). They used slightly different techniques but i found it helped me understand what I wanted to do.
+
+
+## Content and Media  
+
+* Images were downloaded attribution free from [https://www.vecteezy.com/](https://www.vecteezy.com/).  
+* The gif used was downloaded attribution free from [https://www.motionelements.com/](https://www.motionelements.com/).  
+* [Tinypng.com/](https://tinypng.com/) was used to compress images.
+* [Cloudconvert.com](https://cloudconvert.com/webp-converter) was used to convert images to webp.
+* The favicon was made at [https://favicon.io/](https://favicon.io/).
+* The image of the website on different devices was made at [https://ui.dev/amiresponsive](https://ui.dev/amiresponsive).
+* My wireframes were made using [balsamiq](https://balsamiq.com/).
+* [Google Fonts](https://fonts.google.com/) was used to get the fonts.
+* [Gitpod.io/](https://gitpod.io/) was used to create the site.
 
