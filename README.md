@@ -112,8 +112,7 @@ For the more dense parts of text, like the initial question and rules I used Ind
 
 ### Images
 
-All the images were taken from [www.vecteezy.com/](https://www.vecteezy.com/) with no attribution required.
-The images chosen are to enhance the UX for the target audience. The images are bright and cartoonish matching the games animal theme and looking to entertain the user.
+The images chosen are to enhance the UX for the target audience. The images are bright and cartoonish matching the games animal theme and looking to entertain the user. There are large background images covering each page and the user can choose what background image they woukd like for the game.
 
 ### Wireframes
 
@@ -162,21 +161,35 @@ This tells you the rules of the upcoming game then allows you to pick a game 'de
 
 ### Game Area  
 
+There is an area displaying three cartoon images of an Elephant, Mouse and a Monkey where you can click on to make your choice. This then displays your choice and the random computer choice in the results area highlighting your pick red if you lost and green if you won. It also shows both yours and the computers score, once one of these reaches 5 the game is over. There is also a message displayed underneath after each time you pick telling you the result.
+
 ![Game Area](assets/media/game-area.png)  
 
 ### Winner Area  
+
+This is where the user gets to five first and wins the game. There is a winning message and a button to play again taking you back to the question area. A gif of confetti was used as a background image to add to user experience.
 
 ![Winner Area](assets/media/winner-area.png)  
 
 ### Loser Area  
 
+This is where the computer gets to five first and wins the game. There is a losing message and a button to play again taking you back to the question area.
+
+
 ![Loser Area](assets/media/loser-area.png)  
 
 ### 404 Page  
 
+This is here if there are any 404 errors. Its a simple page with the logo, a message explaining whats happened and a button to get back to the question area.
+
 ![404 Message](assets/media/error-page.png)  
 
 ### Accessibility
+
+The accessibility of the website was tested by both Wave (No errors or warnings) and Lighthouse (score of 100), please see the [TESTING page](TESTING.md) page for details.  
+All the images have relevant alt descriptions.  
+The links back to the question and the buttons changing the background images area have descriptive aria-labels.  
+The buttons have clear hover effects and also have a focus effect for keyboard users.
 
 ### Future Implementations  
 
@@ -187,6 +200,29 @@ In the future I would like to:
 * Give more style options to the user with more background images and also add background sounds.
 
 ## Deployment
+
+Github Pages was used to deploy the website by the following steps:
+
+* I went to Github.
+* Selected my repository for this project.
+* Clicked on the Settings link.
+* Clicked on the Pages link in the left hand side navigation bar.
+* In the Source section, I chose main from the drop down select branch menu and selected Root from the drop down select folder menu.
+* Clicked save, and the live Github Pages site was deployed at [Elephant Mouse Monkey](https://daviddock.github.io/ElephantMouseMonkey/).  
+
+
+To Fork the repository:  
+
+* In Github go to the repository [https://github.com/DavidDock/ElephantMouseMonkey](https://github.com/DavidDock/ElephantMouseMonkey).
+* Click the fork button in the top right corner.  
+
+To Clone the repository:  
+
+* In Github go to the repository [https://github.com/DavidDock/ElephantMouseMonkey](https://github.com/DavidDock/ElephantMouseMonkey).
+*  Click the Code button and select if you'd like to clone with HTTPS, SSH or Github CLI and copy the link underneath.
+* Open your terminal in your code editor and change the working directory to the location you want to use for the cloned directory.
+* Type 'git clone', paste the link you copied and press enter.
+
 
 ## Testing
 
