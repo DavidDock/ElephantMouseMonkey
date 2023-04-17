@@ -127,6 +127,52 @@ I undertook the following manual testing for the website:
 
 | Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
 | --- | --- | --- | --- | --- |  
+| Hover effect on destination buttons | Button should change color on hover | Hover over button with mouse | The color changed | Pass |  
+| Focus changed | Tab should change focus on destination buttons and they should be highlighted | Press tab to go through focus items | Focus changed correctly | Pass |
+| Changing background image | When the button is pressed the game area should open and have the relevent background image | Try out all the destination buttons | The relevent background image apeared in the game area | Pass |  
+
+### Game Area  
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- | 
+| Hover effect on animal choice buttons | Button should have brighter background on hover | Hover over button with mouse | The background changed | Pass |  
+| Focus changed | Tab should change focus on animal choice buttons and they should be highlighted | Press tab to go through focus items | Focus changed correctly | Pass |  
+| Making your choice | When the user chooses their animal it should appear in the results area under 'you' and a random choice for the computer should appear under 'computer' | Play the game a number of times choosing each animal | The correct image choice appears and a random choice is made by the computer | Pass |  
+| Color and Opacity for winner and loser Image | The Winners image should have a green background and the losers image should have a red background and the opacity should be decreased to make the winner stand out | Play the game a number of times | Expected color and opacity changes matching the result | Pass |  
+| Result message | A message at the bottom of the screen should appear stating what happened and who won that point | Play the game a number of times | The relevent message that matched the result was displayed | Pass |  
+| Score counter | After each round a point should add to the relevant persons score counter | Play the game a number of times | The point was added to the correct persons score | Pass |
+| Win | When the users score gets to 5 you should get taken to the winners area |  Play the game | If i got to 5 points I was taken to the winners area | Pass |
+| Loose | When the computers score gets to 5 you should get taken to the loosers area |  Play the game | If the computer got to 5 points I was taken to the loosers area | Pass |  
+
+
+### Winners Area
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- | 
+| Hover effect on play again button | Button should change color on hover | Hover over button with mouse | The color changed | Pass |  
+| Focus changed | Tab should change focus on play agin button and it should be highlighted | Press tab to go through focus items | Focus changed correctly | Pass |
+| Play again | Pressing the play again button should take the user back to the questions area | Tried the button a number of times | Took me back to the questions area | Pass |
+| Confetti gif | A confetti gif background image should be displayed | Played game | The image played, with some issues on safari browser |  Safari browser did not like the inital gif image and kept flashing black so I changed this to a webp image which resolved the bug |
+
+
+### Loser Area
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- | 
+| Hover effect on play again button | Button should change color on hover | Hover over button with mouse | The color changed | Pass |  
+| Focus changed | Tab should change focus on play agin button and it should be highlighted | Press tab to go through focus items | Focus changed correctly | Pass |
+| Play again | Pressing the play again button should take the user back to the questions area | Tried the button a number of times | Took me back to the questions area | Pass |  
+
+
+### 404 Error Page
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- | 
+| Home button | Pressing the Home button should take the user back to the questions area | Tried the button a number of times | Took me back to the questions area | Pass |
+
+
+
+
 
 
 

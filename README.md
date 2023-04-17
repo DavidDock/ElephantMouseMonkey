@@ -89,7 +89,7 @@ Because the game is to be used by children it is important to ensure the user jo
 ### Colour Scheme
 
 
-Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme. Some of the research I undertook on UX for children can be found on [Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
+Because this game is designed to be enjoyable for children I opted to go for a really bright, colorful and cheerful color scheme. Some of the research I undertook on user experience for children can be found on [Children-first-design](https://uxdesign.cc/ux-for-kids-responsible-matter-802bd12fe28c).
 
 To meet WCAG 2.0 criteria, the color scheme was then passed to [eightshapes.com](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23ffffff%0D%0A%23000000%0D%0A%2366ff00%0D%0A%2308e8de%0D%0A%23fc74fd%0D%0A%23803790%0D%0A%23fd0e35%0D%0A%2300468c%0D%0A%23013220%0D%0A%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp) to generate an accessibility table, I then only used accessible text colors to ensure easy reading.
 
@@ -138,7 +138,7 @@ The favicon for this website was created at [https://favicon.io/](https://favico
 
 ### Logo and Title  
 
-* This runs at the top of the page at all times. It comprises of a large title and logo in keeping with the website's bright and fun UX. 
+* This runs at the top of the page at all times. It comprises of a large title and logo in keeping with the website's bright and fun design. 
 * The Logo also acts as a link to refresh the website back to the random question area.
 
 ![Logo and Title](assets/media/logo.png)  
