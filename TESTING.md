@@ -47,8 +47,8 @@
 * A number of unnecessary semi-colons were found.
   These semi-colons were deleted to fix the warning.
 
-* There were 2 warnings stating: Functions declared within loops referencing out scoped variable may lead to confusing semantics. This was where I initially had two long functions within click event listener loops containing other functions. These were for both my answer buttons and user animal choice buttons.  
-  I fixed the issue by adding two functions for when the relevant button was clicked ('questionClick' and 'gamRun') so I could take the other functions out of the loop.  
+* There were 2 warnings stating: 'Functions declared within loops referencing out scoped variable may lead to confusing semantics.' This was where I initially had two long functions within click event listener loops containing other functions. These were for both my answer buttons and user animal choice buttons.  
+I fixed the issue by adding two functions for when the relevant button was clicked ('questionClick' and 'gamRun') so I could take the other functions out of the loop.  
 
 ### Final Test Results  
 
@@ -59,7 +59,7 @@
 ### Problems highlighted and how they were fixed  
 
 * The 404 page had a contrast issue with the text color.  
-  I change the text to black to fix the problem.  
+  I changed the text to black to fix the problem.  
 
 * Large images affecting the performance score.  
   All the images and gif was changed to webp files to reduce size and I scaled down the images to reduce further. This helped the performance score to get to 100 on desktop. Lighthouse was stating that these images affected the cache performance on the mobile device so the score was a bit lower than I would have liked. Cache issues are out of scope of this project but I will look into this in the future.  
@@ -102,7 +102,7 @@ Responsiveness was tested throughout the development by using dev tools on every
 
 ## Manual Testing  
 
-This website has been tested on mobile devices, tablets and laptop and as mentioned in the responsiveness section above It has been thoroughly tested with dev tools and [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700).  
+This website has been tested on mobile devices, tablets and laptop and as mentioned in the responsiveness section above it has been thoroughly tested with dev tools and [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700).  
 I have tested the site on Chrome, Safari and Microsoft Edge browsers and it works well on all.  
 
 I undertook the following testing for the website:

@@ -55,30 +55,30 @@ Everyone knows that:
 
 The game is for all ages but primarily designed for children.
 This means that the game has to entertain and be eye catching to grab the users attention.
-Because the game is to be used by children it is important to ensure the users journey is clear and simple to follow.  
+Because the game is to be used by children it is important to ensure the user journey is clear and simple to follow.  
 
 ### User Stories  
 
 #### User goals
 
-* As a user I want to be entertained so I don't get bored.
-* As a user I want to know what I am doing so I don't get confused.
+* As a user I want to be entertained so I do not get bored.
+* As a user I want to know what I am doing so I do not get confused.
 * As a user I want to play a simple game against a computer to see if I come out on top. 
 * As a returning user I would like to play again and show my friends.
 
 #### The websites goals
 
 * As the site owner I want to entertain the user.
-* As the site owner I would like to provide a simple game that all can play on a multitude of device types.
+* As the site owner I would like to provide a simple game can be played on all device types.
 * As the site owner I would like to encourage the user to play more than once and return to the site.
 * As a site owner I want to teach the user new facts whilst playing.
 
 #### How will the goals be acheived
 
-* Engaging UX that to grab childrens attention and be fun. Bright colors, fun typography and cartoon images all matching the animal theme of the game.
+* Engaging designs to grab children's attention and be fun. Bright colors, fun typography and cartoon images all matching the animal theme of the game.
 * A fun and informative question to start the game, teaching the user a fact about the subject matter. There will be a number of different questions to keep the returning player enertained.
 * Options to change the background image will keep the user entertained and encourage them to play again.
-* Large, intuitive buttons so the navigation is straight forward.
+* Large, self explanatory buttons so the navigation is straight forward.
 * A set amount of rounds of the game to play so a winner is determained and informed by a results screen.
 * A simple layout that is responsive on all device types.
 
@@ -95,13 +95,11 @@ To meet WCAG 2.0 criteria, the color scheme was then passed to [eightshapes.com]
 
 ![Color-grid](assets/media/color-grid.png)
 
-### Typography
+### Typography  
 
-Google Fonts was used to import the chosen fonts for use in the site.
+Again because this is a game with children in mind I used fun, playful fonts designed to entertain.
 
-Again because this is a game with children in mind I used fun, kiddy fonts designed to entertain.
-
-For The headings I used Kranky, its a fun-filled font with is very stylised ideal for headings:
+For The headings I used Kranky, its a fun-filled font which is very stylised and ideal for headings:
 
 ![Kranky](assets/media/kranky.png)
 
@@ -112,17 +110,17 @@ For the more dense parts of text, like the initial question and rules I used Ind
 
 ### Images
 
-The images chosen are to enhance the UX for the target audience. The images are bright and cartoonish matching the games animal theme and looking to entertain the user. There are large background images covering each page and the user can choose what background image they woukd like for the game.
+The images chosen are to enhance the user experience for the target audience. The images are bright and 
+ animated matching the games animal theme and looking to entertain the user. There are large background images covering each page and the user can choose a background image they woukd like for the game.
 
 ### Wireframes
 
-Balsamiq was used to design my wireframes.
 
-The websites layout remains the same for mobile and tablet devices.  
+The website's layout remains the same for mobile and tablet devices.  
 
 The site is responsive and adjusts image and font size depending on device size.  
 
-The websites layout changes for the rules page and games page when devices reach 1024 px and above.  
+The website's layout changes for the rules page and games page when devices reach 1024 px and above.  
 
 ![Wireframes](assets/media/wireframes.png)
 
@@ -140,14 +138,17 @@ The favicon for this website was created at [https://favicon.io/](https://favico
 
 ### Logo and Title  
 
-This runs at the top of the page at all times. It comprises of a large title and Logo in keeping with the websites bright and fun UX. The Logo also acts as a link to refresh the website back to the random question area.
+* This runs at the top of the page at all times. It comprises of a large title and logo in keeping with the website's bright and fun UX. 
+* The Logo also acts as a link to refresh the website back to the random question area.
 
 ![Logo and Title](assets/media/logo.png)  
 
 ### Question Area  
 
-Displaying a multiple choice question about the three animals. This question is randomly generated each time you play and has three options. You have to select the correct answer to get to the rules area and start the game. If you select the wrong answer that option will disapear and you'll be asked to guess again until you get it right.  
-With the area turning red if you are incorrect, large buttons, hover and focus effects this makes navigation and gameplay straight forward.
+* Displaying a multiple choice question about the three animals. This question is randomly generated each time you play and has three options.
+* After you select the correct answer you move to the rules area and start the game. If you select the wrong answer that option will disapear and you will be asked to guess again until you get it right.  
+* The area turns red if you are incorrect, there are large buttons, hover and focus effects to make 
+ the site's navigation and gameplay straight forward.
 
 ![Question Area](assets/media/question.png)  
 
@@ -155,13 +156,16 @@ With the area turning red if you are incorrect, large buttons, hover and focus e
 
 ### Rules Area  
 
-This tells you the rules of the upcoming game then allows you to pick a game 'destination'. The destinations are backgound images that display during the main game matching the websites theme.
+This tells you the rules of the upcoming game and allows you to pick a game 'destination'. The destinations are backgound images that display during the main game matching the website's theme.
 
 ![Rules Area](assets/media/rules.png)  
 
 ### Game Area  
 
-There is an area displaying three cartoon images of an Elephant, Mouse and a Monkey where you can click on to make your choice. This then displays your choice and the random computer choice in the results area highlighting your pick red if you lost and green if you won. It also shows both yours and the computers score, once one of these reaches 5 the game is over. There is also a message displayed underneath after each time you pick telling you the result.
+* There is an area displaying three cartoon images of an Elephant, Mouse and a Monkey where you can click on to make your choice. 
+* This then displays yours and the random computer choice in the results area highlighting your pick, red if you lost or green if you won.  
+* The results area also shows both your score and the computers score, once one of these reaches 5 the game is over.  
+* There is also a message displayed underneath after each time you pick telling you the result.
 
 ![Game Area](assets/media/game-area.png)  
 
@@ -180,16 +184,16 @@ This is where the computer gets to five first and wins the game. There is a losi
 
 ### 404 Page  
 
-This is here if there are any 404 errors. Its a simple page with the logo, a message explaining whats happened and a button to get back to the question area.
+This is here if there are any 404 errors. It is a simple page with the logo, a message explaining what has happened and a button to get back to the question area.
 
 ![404 Message](assets/media/error-page.png)  
 
 ### Accessibility
 
-The accessibility of the website was tested by both Wave (No errors or warnings) and Lighthouse (score of 100), please see the [TESTING page](TESTING.md) page for details.  
+* The accessibility of the website was tested by both Wave (No errors or warnings) and Lighthouse (score of 100), please see the [TESTING page](TESTING.md) page for details.  
 All the images have relevant alt descriptions.  
-The links back to the question and the buttons changing the background images area have descriptive aria-labels.  
-The buttons have clear hover effects and also have a focus effect for keyboard users.
+* The links back to the question and the buttons changing the background images area have descriptive aria-labels.  
+* The buttons have clear hover effects and also have a focus effect for keyboard users.
 
 ### Future Implementations  
 
@@ -237,7 +241,7 @@ The code used for this project was taught to me by code insitute. In particular 
 
 ### New learning
 
-To get my head around the concepts needed for this game I also watched [3 ways to code Rock Paper Scissors in JavaScript](https://www.youtube.com/watch?v=RwFeg0cEZvQ) and [How To Code Rock Paper Scissors In JavaScript](https://www.youtube.com/watch?v=1yS-JV4fWqY). They used slightly different techniques but i found it helped me understand what I wanted to do.
+To gain a greater understanding of the concepts needed for this game I also watched [3 ways to code Rock Paper Scissors in JavaScript](https://www.youtube.com/watch?v=RwFeg0cEZvQ) and [How To Code Rock Paper Scissors In JavaScript](https://www.youtube.com/watch?v=1yS-JV4fWqY). They used slightly different techniques but I found it helped me understand what I wanted to do.
 
 
 ## Content and Media  
