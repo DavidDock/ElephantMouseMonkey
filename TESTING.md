@@ -11,7 +11,7 @@
 ## HTML Validator  
 
 
-### Problems highlighted and how they were fixed  
+### Problems/Bugs highlighted and how they were fixed  
 
 * There were unwanted // inside the meta elements in the head of the html document.  
   This was fixed by removing them.
@@ -24,7 +24,7 @@
 ## CSS Validator  
 
 
-### Problems highlighted and how they were fixed  
+### Problems/Bugs highlighted and how they were fixed  
 
 * .button had an unknown value of re instead of rem.  
   The fix was to correct spelling mistake.  
@@ -42,7 +42,7 @@
 ## JavaScript Validator 
 
 
-### Problems highlighted and how they were fixed  
+### Problems/Bugs highlighted and how they were fixed  
 
 * A number of unnecessary semi-colons were found.
   These semi-colons were deleted to fix the warning.
@@ -56,7 +56,7 @@ I fixed the issue by adding two functions for when the relevant button was click
 
 ## Lighthouse  
 
-### Problems highlighted and how they were fixed  
+### Problems/Bugs highlighted and how they were fixed  
 
 * The 404 page had a contrast issue with the text color.  
   I changed the text to black to fix the problem.  
@@ -77,7 +77,7 @@ I fixed the issue by adding two functions for when the relevant button was click
 
 ## Wave  
 
-### Problems highlighted and how they were fixed  
+### Problems/Bugs highlighted and how they were fixed  
 
 * Warnings on alt image descriptions.  
   I changed the image descriptions to make clearer and this fixed the warning.
@@ -98,18 +98,37 @@ I fixed the issue by adding two functions for when the relevant button was click
 
 ## Device Responsiveness  
 
-Responsiveness was tested throughout the development by using dev tools on every section of the site. I then thoroughly tested the site on [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700), especially focusing on whether the site works on small devices of 320px wide and also the desktop breakpoint of 1024px wide. This website is fully responsive on all devices.  
+Responsiveness was tested throughout the development by using dev tools on every section of the site. I then thoroughly tested the site on [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700), especially focusing on whether the site works on small devices of 320px wide and also the desktop breakpoint of 1024px wide. This website is fully responsive on all devices. 
+
+### Problems/Bugs highlighted and how they were fixed    
+
+* The background image jumped to accomodate a scroll bar on devices over 1024px when going from the questions area to the rules area.  
+The fix was to add overflow-y: scroll onto the body element. I learnt this technique from [stackoverflow.com](https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome*/).
 
 ## Manual Testing  
 
-This website has been tested on mobile devices, tablets and laptop and as mentioned in the responsiveness section above it has been thoroughly tested with dev tools and [responsivedesignchecker.com](https://www.responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fdaviddock.github.io%2FElephantMouseMonkey%2F&width=1400&height=700).  
-I have tested the site on Chrome, Safari and Microsoft Edge browsers and it works well on all.  
+I have tested the site on Chrome, Safari and Microsoft Edge browsers and it works well on all. As well as the above responsive design testing I have also personally tested the website on a laptop, IPad and a number of mobile devices.
 
-I undertook the following testing for the website:
+I undertook the following manual testing for the website:
 
 ### Question Area  
 
 | Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
 | --- | --- | --- | --- | --- |  
 | Logo links to the question area | The page refreshes | Clicked the logo several times | Refreshes page | Pass |
+| Random Question | All questions appear eventually | Keep refreshing the page | All questions appeared | Pass |
+| Hover effect on answer buttons | Button should change color on hover | Hover over button with mouse | The color changed | Pass |
+| Focus changed | Tab should change focus on the logo and answer buttons and they should be highlighted | Press tab to go through focus items | Focus changed correctly | Pass |
+| Question answered incorrectly | Container should turn red, guess again message should appear and picked answer should disappear | Get lots of questions wrong | Feature worked correctly | Pass |
+| Question answered corectly | Should take you to the rules area | Answer a number of questions correctly | Taken to rules area | Pass |  
+
+### Rules Area  
+
+
+| Feature | Expected Outcome | Test Performed | Result | Pass/Bug fixed |  
+| --- | --- | --- | --- | --- |  
+
+
+
+
 
