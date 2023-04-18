@@ -12,8 +12,6 @@
 /*body style*/
 /*to stop width increasing and backgound jumping when scrollbar included add overflow-y: scroll :learnt from https://stackoverflow.com/questions/18548465/prevent-scroll-bar-from-adding-up-to-the-width-of-page-on-chrome*/
 body {
-    /* Incase background image does not load add background color */
-    background-color: rgba(4, 110, 57, 0.9);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
